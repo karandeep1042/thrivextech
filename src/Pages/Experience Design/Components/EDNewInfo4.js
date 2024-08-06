@@ -34,7 +34,7 @@ export default function EDNewInfo4() {
                     <div className="edinfo3lists">
                         {activitiesdata.map((item, index) => (
                             <div className="edinfo3list edinfo3listtype2">
-                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-circle-check"></i>
                                 <div className="edinfo3listchildcontainer">
                                     <div className="edinfo3listheader">
                                         <p>{item.header}</p>

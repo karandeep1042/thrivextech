@@ -1,0 +1,71 @@
+.dataengineeringslidermaincontainer{
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.dataengineeringsliderchildcontainer{
+    width: 65vw;
+    margin: auto;
+}
+
+.slider{
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+.owl-carousel .owl-stage{
+    justify-content: space-between;
+}
+
+.slider-card{
+    /* width: 100%; */
+    margin: 5vh 0;
+    background-color: rgb(1, 1, 87);
+    transform: scale(1);
+    opacity: .8;
+}
+
+.deslidercardchild{
+    padding: 20px;
+}
+
+.deslidercardheader{
+    color: #0eaae3;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.deslidercardinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 38vh;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.deslidercardsubheader{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.deslidercarddesc{
+    margin-top: 20px;
+    color: rgb(117,117,117);
+    text-align: center;
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  

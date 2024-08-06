@@ -1,70 +1,95 @@
-import React from 'react'
-import img1 from '../../../../Resources/DTSCard.jpg'
-import img2 from '../../../../Resources/PECard.jpg'
-import img3 from '../../../../Resources/EDCard.png'
-import img4 from '../../../../Resources/IPPCard.jpg'
-import img5 from '../../../../Resources/EPCard.jpg'
-import img6 from '../../../../Resources/DACard.png'
-
+import React, { useRef } from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import img1 from '../../../../New Resources/Experience Design/logo1.png'
+import img2 from '../../../../New Resources/Experience Design/logo2.png'
+import img3 from '../../../../New Resources/Experience Design/logo3.png'
+import img4 from '../../../../New Resources/Experience Design/logo4.png'
+import img5 from '../../../../New Resources/Experience Design/logo5.png'
+import img6 from '../../../../New Resources/Experience Design/logo6.png'
+import img7 from '../../../../New Resources/Experience Design/logo7.png'
+import '../../../../New css/CardSlider/CardSlider.css'
 
 export default function CloudNativeCards() {
-    const cultureData = [
+    const cardsinfo2 = [
         {
-            img: img1,
-            title: 'Reduced Time to Market',
-            description: 'Accelerate product rollout and gain a competitive edge with faster development and launch times.Ease of Management: Simplify infrastructure management with serverless platforms and Infrastructure as Code(IaC).'
+            logo: img3,
+            head: 'Microservices Architecture',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'Develop applications as collections of small, independently deployable services managed by dedicated teams.'
         },
         {
-            img: img2,
-            title: 'Cost Efficiency',
-            description: 'Reduce IT expenditure by shifting budgets from maintenance to new functionalities'
+            logo: img4,
+            head: 'Containerization',
+            desc1: 'Modernize Your Data Infrastructure',
+            desc: 'Use containers to isolate microservices, ensuring high accessibility, scalability, and portability across environments.'
         },
         {
-            img: img3,
-            title: 'Reliability and Reduced Downtime',
-            description: ' Enhance security and resilience with containerized applications, ensuring quick recovery and minimal service disruption.'
+            logo: img2,
+            head: 'Cloud Infrastructure',
+            desc1: 'Build a Strong Data Foundation for Your Data Strategy',
+            desc: "Utilize storage, virtualization, and orchestration tools to support cloud-native computing."
         },
         {
-            img: img4,
-            title: 'No Vendor Lock-in',
-            description: 'Maintain flexibility by avoiding dependency on a single provider.'
-        },
-        {
-            img: img5,
-            title: 'Scalability and Flexibility',
-            description: 'Adapt to changing demands with real-time performance improvements.'
-        },
-        {
-            img: img6,
-            title: 'Improved Customer Experience',
-            description: ' Deliver continuous updates and improvements, enhancing customer satisfaction and loyalty.'
+            logo: img3,
+            head: 'DevOps Culture',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'Integrate development and operations teams for rapid, consistent software development and deployment.'
         },
     ]
 
+    let sliderRef = useRef(null);
+    const next = () => {
+        sliderRef.slickNext();
+    };
+    const previous = () => {
+        sliderRef.slickPrev();
+    };
+
+    const settings = {
+        className: "center",
+        centerMode: true,
+        centerPadding: '0px',
+        infinite: true,
+        slidesToShow: 3,
+        speed: 500,
+    };
+
     return (
         <>
-            <div className="careerculturemaincontainer">
-                <div className="careerculturechildcontainer">
-                    <div className="careercultureheader">
-                        <p>Benefits of the Cloud-Native <span>Model </span></p>
+            <div className="slider-container" style={{ width: '65vw', margin: 'auto' }} >
+                <div className="dataenginfodiv1" style={{ marginBottom: '3vh' }}>
+                    <div className="dataenginfomainheader">
+                        <p>Cloud Native Development Services</p>
                     </div>
-                    <p style={{color:'white',fontSize:'1.5rem',width:'70vw',textAlign:'center',width:'95%'}}>Let THRIVEX lead your seamless cloud-native transformation, ensuring your applications are modern, scalable, and resilient. Contact us to start your journey today.</p>
-                    <div className="careerculturecards">
-                        {cultureData.map((item, index) => (
-                            <div className="careerculturecard" style={{ margin: '2vh 1vw' }}>
-                                <div className="careerculturecardimg">
-                                    <img src={item.img} alt="" />
+                </div>
+                <Slider ref={slider => {
+                    sliderRef = slider;
+                }} {...settings}>
+                    {cardsinfo2.map((option, index) => (
+                        <div id="" className="slidercard">
+                            <div className="slidercardsection1">
+                                <div className="slidercardlogo">
+                                    <img src={option.logo} alt="" />
                                 </div>
-                                <div className="careerculturecardinfo">
-                                    <div className="careeerculturecardtitle">
-                                        {item.title}
-                                    </div>
-                                    <div className="careeerculturecarddescription">
-                                        {item.description}
-                                    </div>
+                                <div className="slidercardheader">
+                                    <p>{option.head}</p>
                                 </div>
                             </div>
-                        ))}
+                            <div className="slidercardsection2">
+                                <div className="slidercarddesc">
+                                    {/* <b style={{ marginBottom: '1.5vh' }}>{option.desc1}</b> */}
+                                    <p>{option.desc}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+                <div style={{ textAlign: "center" }}>
+                    <div className="slider-buttons">
+                        <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn" onClick={previous}></i>
+                        <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn" onClick={next}></i>
                     </div>
                 </div>
             </div>

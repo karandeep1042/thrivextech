@@ -1,43 +1,65 @@
 import React from 'react'
-import img1 from '../../../Resources/dtshero.jpg'
+import { Link } from 'react-router-dom'
 
 export default function AboutInfo2() {
     return (
         <>
-            <div className="aboutheromaincontainer">
-                <div className="aboutherosection2">
-                    <img src={img1} alt="" />
-                </div>
-                <div className="homeinfosection1">
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Purpose
+            <div className="careerinfomaincontainer">
+                <div className="careerinfochildcontainer">
+                    <div className="careerinfodiv1">
+                        <div className="careerinfoheader">
+                            <p>Our Values</p>
+                        </div>
+                        <div className="careerinfodesc">
+                            <p>At Thrivex, We foster a vibrant and inclusive company culture that empowers our team members to thrive, innovate, and deliver exceptional results. Our culture is built on the following key values</p>
+                        </div>
                     </div>
-                    <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            Our purpose is simple: to help businesses navigate the ever-evolving digital landscape and achieve their full potential. We believe that technology is a powerful tool for growth and innovation, and we're here to guide you on your digital journey.
-                        </p>
+                    <div className="careerinfodiv1">
+                        <div className="aboutinfolists">
+                            <div className="aboutinfonewlist">
+                                <div className="aboutinfolistheader">
+                                    <i className="fa-solid fa-brain"></i>
+                                    <p>Bold</p>
+                                </div>
+                                <div className="aboutinfolistdescription">
+                                    We <span className="aboutinfolistdescriptionboldwords">dream big</span> and <span className="aboutinfolistdescriptionboldwords">push boundaries</span>. We're not afraid to take <span className="aboutinfolistdescriptionboldwords">calculated risks</span> and <span className="aboutinfolistdescriptionboldwords">champion innovative ideas. We speak our minds</span> with conviction to find the best solutions.
+                                </div>
+                            </div>
+                            <div className="aboutinfonewlist">
+                                <div className="aboutinfolistheader">
+                                    <i class="fa-solid fa-sun"></i>
+                                    <p>Agile</p>
+                                </div>
+                                <div className="aboutinfolistdescription">
+                                    We move with <span className="aboutinfolistdescriptionboldwords">agility</span>, building solutions quickly and <span className="aboutinfolistdescriptionboldwords">learning</span> even faster from setbacks. We're <span className="aboutinfolistdescriptionboldwords">obsessed with impact</span>, elivering <span className="aboutinfolistdescriptionboldwords">tangible results</span> that <span className="aboutinfolistdescriptionboldwords">exceed expectations.</span>
+                                </div>
+                            </div>
+                            <div className="aboutinfonewlist">
+                                <div className="aboutinfolistheader">
+                                    <i className="fa-solid fa-brain"></i>
+                                    <p>Human</p>
+                                </div>
+                                <div className="aboutinfolistdescription">
+                                    We believe in the power of <span className="aboutinfolistdescriptionboldwords">collaboration</span> and <span className="aboutinfolistdescriptionboldwords">empathy</span>. We foster a <span className="aboutinfolistdescriptionboldwords">supportive</span> environment where <span className="aboutinfolistdescriptionboldwords">everyone feels valued</span> and their <span className="aboutinfolistdescriptionboldwords">curiosity is encouraged</span>. We treat each other <span className="aboutinfolistdescriptionboldwords">respect</span> and strive to build a <span className="aboutinfolistdescriptionboldwords">positive tech ecosystem.</span>
+                                </div>
+                            </div>
+                            <div className="careerinfodesc">
+                                <p>
+                                    Our dedication to our core values serves as the foundation for our unique culture, which prioritizes our customers.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Mission
+                    <div className="careerinfodiv1">
+                        <div className="careerinfoheader">
+                            <p>Join our Team</p>
+                        </div>
+                        <div className="careerinfodesc">
+                            <p>Are you passionate about technology and making a difference? We're always looking for talented individuals to join our team. <br /><br />
+                                Visit our <Link to='/career' style={{ color: '#0eaae3' }}>Careers</Link> Page to learn more about our open positions.</p>
+                        </div>
                     </div>
-                    <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            Our mission is to be your trusted partner in digital transformation. We achieve this by:
-                            <ul style={{ marginLeft: '1.5vw' }}>
-                                <li>Understanding your unique needs and challenges.</li>
-                                <li>Developing customized solutions that drive measurable results.</li>
-                                <li>Delivering exceptional service and support every step of the way.</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Vision
-                    </div>
-                    <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            We envision a future where businesses of all sizes can leverage the power of technology to thrive. We are committed to being at the forefront of innovation, helping our clients stay ahead of the curve.
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </>

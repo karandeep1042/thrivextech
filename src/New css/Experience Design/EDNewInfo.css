@@ -1,9 +1,9 @@
 .ednewinfomaincontainer{
     width: 65vw;
     /* background-color: aqua; */
-    margin: 4vh auto;
+    margin: 5vh auto;
     display: flex;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
 }
 
 .ednewinfodiv1{
@@ -23,15 +23,19 @@
 
 .ednewinfomainheader{
     margin: 5vh 0vw;
-    font-size: 2.5rem;
-    font-weight: 600;
+    /* font-size: 2.5rem; */
+    /* font-weight: 600; */
+    font-size: 2rem;
+    font-weight: 500;
     color: #0eaae3;
 }
 
 .ednewinfomainlists{
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     gap: 4vh;
+    height: 60%;
 }
 
 .ednewinfomainlist{
@@ -45,6 +49,11 @@
 
 .ednewinfomainlist .ednewinfomainlistheader{
     font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.ednewinfomainlist .ednewinfomainlistdesc{
+    font-size: 1.6rem;
 }
 
 @keyframes fadein {

@@ -132,7 +132,7 @@ export default function Navbar() {
                 <div className="navbarserviceddoption">Data & AI</div>
                 <i className="fa-solid fa-angle-left ealogo"></i>
                 <div className="eamenu">
-                  <Link to='/dataai' className="navbarserviceddoption">Data & AI</Link>
+                  {/* <Link to='/dataai' className="navbarserviceddoption">Data & AI</Link> */}
                   <Link to='/dataengineering' className="navbarserviceddoption">Data Engineering</Link>
                   <Link to='/insightsanalytics' className="navbarserviceddoption">Insights & Analytics</Link>
                   <Link to='/aiml' className="navbarserviceddoption">AI & ML</Link>

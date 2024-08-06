@@ -4,15 +4,14 @@
 }
 
 .cookiepolicybodymainheader p {
-    padding: 10vh 20vw;
+    padding: 0vh 20vw;
     /* padding-top: 14vh; */
     /* padding-bottom: 15vh; */
 }
 
 .cookiepolicybodymainheader {
     width: 100vw;
-    color: #ffffff;
-    background-color: #0eaae3;
+    color: #0eaae3;
     margin: 0 auto;
     font-size: 3rem;
     font-weight: 600;
@@ -24,7 +23,6 @@
     width: 100vw;
     color: #ffffff;
     background-color: #0eaae3;
-
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -41,9 +39,9 @@
 
 .privacypolicybodyinfo {
     width: 60vw;
-    font-size: 1.2rem;
-    margin: 0px auto;
-    /* color: #797979; */
+    font-size: 1.6rem;
+    margin: 0 auto;
+    
 }
 
 .privacypolicybodyinfo ul {
@@ -51,8 +49,9 @@
 }
 
 .privacypolicybodyinfo span {
+    font-size: 2rem;
     color: #0eaae3;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 @media only screen and (max-width : 800px) {

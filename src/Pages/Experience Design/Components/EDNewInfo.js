@@ -35,32 +35,26 @@ export default function EDNewInfo() {
         },
     ]
 
-    const handleScroll = () => {
-        if(window.scrollY>580){
-            let element = document.getElementById('ednewinfoimg');
-            element.style.transform = "translateY(40vh)"
-        }else{
-            let element = document.getElementById('ednewinfoimg');
-            element.style.transform = "translateY(4vh)"
-        }
-        // console.log(window.scrollY);
-    }
-
-    // useEffect(() => {
-    //     console.log(window.scrollY);
-    // });
-
-    window.addEventListener('scroll', handleScroll);
+    const serviceslist2 = [
+        {
+            header: "User Experience (UX)",
+            desc: "Focuses on the individual user's interaction with a product or service, ensuring it is intuitive, efficient, and enjoyable."
+        },
+        {
+            header: "Customer Experience (CX)",
+            desc: "Encompasses the entire journey a customer takes with a brand, from initial contact to post-purchase support, aiming to create a positive and lasting impression."
+        },
+    ]
 
     return (
         <>
-            <div className="ednewinfomaincontainer" onScroll={handleScroll}>
+            <div className="ednewinfomaincontainer" >
                 <div className="ednewinfodiv1">
                     <div className="ednewinfomainheader">
-                        <p>OUR SERVICES</p>
+                        <p>UX vs. CX: Understanding the Difference</p>
                     </div>
                     <div className="ednewinfomainlists">
-                        {serviceslist.map((item, index) => (
+                        {serviceslist2.map((item, index) => (
                             <div className="ednewinfomainlist" key={index}>
                                 <div className="ednewinfomainlistheader">
                                     <p>{item.header}</p>

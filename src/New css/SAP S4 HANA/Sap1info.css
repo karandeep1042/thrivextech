@@ -1,0 +1,43 @@
+.sap1infomaincontainer {
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.sap1infochildcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.sap1infodiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.sap1infomainheader {
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+}
+
+.sap1infomaindesc {
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+}
+
+.sap1infolists {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    margin-top: 5vh;
+}
+
+.sap1infolist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sap1infolist img {
+    width: 90%;
+}

@@ -14,7 +14,7 @@ export default function () {
             <Navbar />
             <DataAIHero />
             <DataAICards />
-            <DataAICards2 />
+            {/* <DataAICards2 /> */}
             <ContactPage />
             <Footer />
         </>

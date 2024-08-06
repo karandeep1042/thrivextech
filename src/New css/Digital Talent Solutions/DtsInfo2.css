@@ -1,0 +1,28 @@
+.dtsinfo2maincontainer {
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.dtsinfo2childcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.dtsinfo2header {
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+}
+
+.dtsinfo2description {
+    margin-top: 4vh;
+    font-size: 1.6rem;
+}
+
+.dtsinfo2description ul {
+    margin-left: 1.3vw;
+}
+
+.dtsinfo2description ul li::marker {
+    color: #0eaae3;
+}

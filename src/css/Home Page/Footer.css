@@ -1,8 +1,14 @@
-.footermaincontainer {
+.footermaincontainer{
+  background-color: #00ABE9;
+}
+
+.footerchildcontainer {
+  padding-top: 60px;
+  width: 70vw;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 7vh 2vw;
-  background-color: #0A69C2;
 }
 
 .footersection1 {
@@ -18,7 +24,6 @@
 
 .footerlogo {
   width: 20vw;
-  /* margin: 0 auto; */
 }
 
 .footerlogo img {
@@ -40,7 +45,6 @@
   transition: 0.3s;
   border-radius: 50%;
   background-color: #0eaae3;
-  /* padding: 10px 13px; */
   width: 35px;
   height: 35px;
   display: flex;
@@ -54,12 +58,11 @@
 }
 
 .footersection2 {
-  width: 33vw;
-  font-size: 1.2rem;
+  width:60%;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 4vh;
-  /* padding-left: 3vw; */
 }
 
 .footersection2header {
@@ -71,16 +74,14 @@
 }
 
 .footersection2links {
-  font-size: 1.1rem;
   display: flex;
-  /* gap: 5vw; */
-  /* flex-direction: column; */
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   cursor: pointer;
 }
 
 .footersection2links a {
+  font-size: 1.6rem;
   display: flex;
   color: white;
   text-decoration: none;
@@ -95,7 +96,8 @@
 }
 
 .footersection3 {
-  width: 33vw;
+  /* width: 33vw; */
+  width: 40%;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -103,6 +105,7 @@
 }
 
 .fs3header {
+  font-size: 2.5rem;
   color: #0eaae3;
 }
 
@@ -117,7 +120,9 @@
 }
 
 .fs3itemsec1 i {
-  color: #0eaae3;
+  font-size: 2rem;
+  color: white;
+  /* color: #0eaae3; */
 }
 
 .fs3itemsec2 {
@@ -125,14 +130,14 @@
 }
 
 .fs3itemsec2 p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: white;
   font-weight: 500;
 }
 
 .fs3itemsec2 span {
-  color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
+  color: rgb(224, 224, 224);
 }
 
 .footersection2accordiondesc ul {
@@ -199,8 +204,8 @@
 }
 
 .footersection2linksheader {
-  /* font-weight: 600; */
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .footersection2linksinfo {
@@ -212,12 +217,30 @@
   gap: 2vh;
 }
 
-.footersection2links a{
+.footersection2links a {
+  /* font-size: 1.3rem; */
   transition: .2s;
 }
 
-.footersection2links a:hover{
+.footersection2links a:hover {
   color: #01c6fd;
+}
+
+.footersection4 {
+  width: 100vw;
+  padding: 2vh 0;
+  /* border-top: rgb(197, 197, 197) 1px solid; */
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footersection4 a{
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (max-width : 480px) {

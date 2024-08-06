@@ -1,5 +1,5 @@
 .sapbtpformsection {
-    width: 70vw;
+    width: 65vw;
     /* height: 87vh; */
     display: flex;
     flex-direction: column;
@@ -47,10 +47,7 @@
 
 .sapbtpformheader {
     font-size: 2rem;
-    /* font-weight: 600; */
     padding: 4vh 0;
-    padding-left: 4vw;
-    padding-bottom: 10vh;
     color: #0eaae3;
 }
 
@@ -58,7 +55,7 @@
     width: 65vw;
     display: flex;
     justify-content: space-between;
-    padding: 0vh 4vw;
+    /* padding: 0vh 4vw; */
     flex-wrap: wrap;
 }
 
@@ -71,8 +68,8 @@
 }
 
 .sapbtpinputbox label {
-    font-size: 1.35rem;
-    font-weight: 600;
+    color: rgb(117,117,117);
+    font-size: 1.6rem;
 }
 
 .sapbtpinputbox label span {
@@ -83,7 +80,7 @@
     background-color: #f2f2f2;
     outline: none;
     border: 0;
-    padding: 1.5vh .5vw;
+    padding: 18px 15px;
     font-size: 1.3rem;
 }
 
@@ -105,7 +102,7 @@
 }
 
 .sapbtpprivacypolicy {
-    font-size: .9rem;
+    font-size: 1.6rem;
     width: 100%;
 }
 
@@ -114,12 +111,13 @@
 }
 
 .sapbtpsendmsgbtn {
-    padding: 15px 25px;
+    padding: 25px 35px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 7px;
     background-color: #0eaae3;
     color: white;
+    font-size: 1.6rem;
     transition: .3s;
     margin-top: 4vh;
     margin-bottom: 4vh;
@@ -138,7 +136,7 @@
 }
 
 .sapbtpselect select {
-    padding: 1.5vh 0vw;
+    padding: 18px 15px;
     background-color: #f2f2f2;
     outline: none;
     border: 0;
@@ -184,17 +182,17 @@
     /* font-weight: 600; */
 }
 
-.PhoneInput{
+.PhoneInput {
     display: flex;
     gap: 1vw;
 }
 
-.PhoneInputCountry{
+.PhoneInputCountry {
     width: 2.5vw;
     display: flex;
 }
 
-.PhoneInputCountrySelect{
+.PhoneInputCountrySelect {
     width: 100%;
 }
 
@@ -206,7 +204,7 @@
 
 .react-tel-input .form-control:focus {
     background-color: #f2f2f2;
-    border-color:transparent;
+    border-color: transparent;
     box-shadow: none;
 }
 

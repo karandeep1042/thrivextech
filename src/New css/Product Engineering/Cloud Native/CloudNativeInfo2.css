@@ -1,0 +1,21 @@
+.cloudnativeinfo2maincontainer{
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.cloudnativeinfo2childcontainer{
+    width: 65vw;
+    margin: auto;
+}
+
+.cloudnativeinfo2header{
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+}
+
+.cloudnativeinfo2desc{
+    font-size: 1.6rem;
+    color: rgb(117,117,117);
+    margin-top: 3vh;
+}

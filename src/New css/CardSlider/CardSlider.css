@@ -1,0 +1,101 @@
+.slidercard {
+    border-radius: 10px;
+    background-color: #01C5FD;
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slidercardsection1 {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.slidercardsection2 {
+    padding: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.slidercardlogo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.slidercardheader {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.slidercardlogo img {
+    width: 80%;
+    /* heig/ht: 13vh; */
+}
+
+.slidercarddesc {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2vh; */
+}
+
+.slider-buttons {
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    color: #01C5FD;
+    margin: 2vh 0;
+}
+
+.slider-buttons i {
+    font-size: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #01C5FD;
+    cursor: pointer;
+    padding: 10px 17px;
+    transition: .3s;
+}
+
+.slider-buttons i:hover {
+    transform: scale(1.02);
+}
+
+.slick-slide .slidercard{
+    transform: scale(0.9);
+    background-color: rgb(117, 117, 117);
+}
+
+.slick-slide>div {
+    margin: 0 1vw;
+}
+
+.slick-current .slidercard {
+    background-color: #01C5FD;
+    transform: scale(1);
+}
+
+#decard{
+    height: 60vh;
+}
+
+#s4hanacard{
+    height: 66vh;
+}
+#qlikcard{
+    height: 43vh;
+}
+
+#insightanalyticscard{
+    height: 55vh;
+}
+
+#swdevcard{
+    height: 50vh;
+}

@@ -1,6 +1,6 @@
 .ednewinfo2maincontainer {
     /* width: 100vw; */
-    margin-top: 15vh;
+    margin: 12vh 0;
 }
 
 .ednewinfo2childcontainer {
@@ -29,8 +29,10 @@
 }
 
 .ednewinfo1header {
-    font-size: 2.5rem;
-    font-weight: 600;
+    /* font-size: 2.5rem;
+    font-weight: 600; */
+    font-size: 2rem;
+    font-weight: 500;
     color: #0eaae3;
     animation: slideInLeft linear;
     animation-timeline: view(y);

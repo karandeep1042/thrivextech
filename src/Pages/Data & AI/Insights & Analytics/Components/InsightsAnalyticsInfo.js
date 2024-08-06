@@ -1,59 +1,54 @@
 import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
+import '../../../../New css/Data & AI/Insights & Analytics/InsightsAnalyticsInfo.css'
+import img1 from '../../../../New Resources/Insights & Analytics/info.png'
 
 export default function InsightsAnalyticsInfo() {
+
+    const infodata = [
+        {
+            header: "Tool Agnostic Technology Recommendations for Maximum Impact",
+            description: "Recognizing the uniqueness of every business, we conduct a comprehensive analysis to understand your specific needs, market demands, and revenue potential. Based on this understanding, we recommend the best-suited technology solutions to optimize your business potential."
+        },
+        {
+            header: "Realize Tangible Business Benefits",
+            description: "Accelerate your data reporting processes and minimize time to market with our agile data management solutions. Experience increased ROI and enhanced efficiency as we guide you towards tangible business benefits, driving growth and success at every turn."
+        },
+        {
+            header: "Create Compelling Narratives from Data",
+            description: "While out-of-the-box data visualization software may fall short, we ensure tailored implementation that aligns seamlessly with your business objectives, facilitating a more efficient understanding of consumer behavior and trends."
+        },
+        {
+            header: "Preparing for the Agile Future",
+            description: "In a rapidly evolving landscape, agility is paramount. We equip your business and teams with cutting-edge analytics tools and comprehensive training, ensuring readiness to navigate unpredictable challenges and seize emerging opportunities."
+        },
+    ]
+
     return (
         <>
-            <div className="homeinfomaincontainer">
-                <div className="aboutherosection2">
-                    <img src={img1} alt="" />
-                </div>
-                <div className="homeinfosection1">
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Approach to Business Intelligence Services
+            <div className="insightsanalyticsinfomaincontainer">
+                <div className="insightsanalyticsinfochildcontainer">
+                    <div className="insightsanalyticsinfodiv1">
+                        <div className="insightsanalyticsinfoheader">
+                            <p>Our Approach to Insights & Analytics</p>
+                        </div>
+                        <div className="insightsanalyticsinfodescription">
+                            <p>With the right business intelligence tools, we empower you to delve deep into consumer behavior, driving profitability, sustainability, and transformative change throughout your organization. We collaborate closely with you to implement intelligent solutions that revolutionize your business operations, both internally and externally. This translates into enhanced agility and decision-making through actionable business insights that inform present strategies and propel your business towards future success.</p>
+                        </div>
                     </div>
-                    <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            With the right business intelligence tools, we empower you to delve deep into consumer behavior, driving profitability, sustainability, and transformative change throughout your organization. We collaborate closely with you to implement intelligent solutions that revolutionize your business operations, both internally and externally. This translates into enhanced agility and decision-making through actionable business insights that inform present strategies and propel your business towards future success.
-                        </p>
-                    </div>
-                    <div className="homeinfolists">
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Tool Agnostic Technology Recommendations for Maximum Impact</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                We source and retain the most sought-after talent around the tech echo-system by getting to know the candidate and understanding your organization.
-                            </div>
-                        </div>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Realize Tangible Business Benefits</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                We put in the time to learn your business’s energy, values, challenges and goals to seek out talent with the skills and expertise to match plus the intangibles—their attitude, their drive—that will help them integrate with your team and culture.
-                            </div>
-                        </div>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Create Compelling Narratives from Data</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                We're dedicated to fostering a talent network that connects us with hard-to-find talent from diverse industries.
-                            </div>
-                        </div>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Preparing for the Agile Future</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                Our expert team of talent specialists works on a global scale, using data-based insights to close skill gaps. Our advisors are dedicated to delivering the right talent swiftly, often within hours or days.
-                            </div>
-                        </div>
+                    <div className="insightsanalyticsinfodiv2">
+                        <img src={img1} alt="" />
+                        {/* <div className="insightsanalyticsinfolists">
+                            {infodata.map((item, index) => (
+                                <div className="insightsanalyticsinfolist">
+                                    <div className="insightsanalyticsinfolistheader">
+                                        <p>{item.header}</p>
+                                    </div>
+                                    <div className="insightsanalyticsinfolistdescription">
+                                        <p>{item.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div> */}
                     </div>
                 </div>
             </div>

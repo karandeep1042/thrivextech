@@ -2,63 +2,53 @@ import React from 'react'
 import img1 from '../../../../Resources/Product Engineering/modernizatiohero.jpg'
 
 export default function CloudNativeInfo() {
+    const activitiesdata = [
+        {
+            header: 'Reduced Time to Market',
+            description: "Launch your products faster with efficient cloud-native development practices."
+        },
+        {
+            header: 'Enhanced Scalability',
+            description: "Easily scale your applications up or down to meet changing demands."
+        },
+        {
+            header: 'Increased Reliability and Reduced Downtime',
+            description: "Benefit from the inherent resilience and fault tolerance of cloud-native applications."
+        },
+        {
+            header: 'Greater Innovation',
+            description: "Focus on building innovative features instead of managing infrastructure."
+        },
+        {
+            header: 'Simplified Maintenance',
+            description: " 	Automate tasks and streamline application management."
+        },
+    ]
+
     return (
         <>
-            <div className="dtsheromaincontainer">
-                <div className="aboutherosection1">
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Approach
+            <div className="ednewinfo3maincontainer">
+                <div className="ednewinfo3childcontainer">
+                    <div className="edinfo3header">
+                        <p>Maximize Business Benefits Custom Software Solutions</p>
                     </div>
-                    <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            At THRIVEX, we specialize in developing new applications and modernizing legacy systems with cloud-native architectures. We employ serverless computing, microservices, container technologies (Docker/Kubernetes), and continuous integration/continuous deployment (CI/CD) to ensure scalable and maintainable software.
-                        </p>
+                    <div className="edinfo3lists">
+                        {activitiesdata.map((item, index) => (
+                            <div className="edinfo3list edinfo3listtype2">
+                                <i className="fa-regular fa-circle-check"></i>
+                                <div className="edinfo3listchildcontainer">
+                                    <div className="edinfo3listheader">
+                                        <p>{item.header}</p>
+                                    </div>
+                                    <div className="edinfo3listdescription">
+                                        <p>{item.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                    <div className="homeinfolists">
-                        <p id='homeinfolistsheader' style={{ fontSize: '2rem', color: '#0eaae3' }}>Key Benefits :</p>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Transform Your Products</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                Convert on-premise products into advanced multi-tenant SaaS platforms with our expert engineering.
-                            </div>
-                        </div>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Accelerated Releases: </p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                Achieve faster, more consistent, and higher quality releases through our CI/CD accelerator.
-
-                            </div>
-                        </div>
-                        <div className="dtsinfolist">
-                            <div className="dtsinfolistheader">
-                                <i class="fa-solid fa-check"></i>
-                                <p>Seamless Legacy Transition:</p>
-                            </div>
-                            <div className="dtsinfolistedescription">
-                                Gradually transition from monolithic applications with minimal disruption using our cloud-native accelerator.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="aboutherosection2">
-                    <img src={img1} alt="" />
                 </div>
             </div>
-            {/* <div className="homeinfomaincontainer">
-                <div className="aboutherosection2">
-                    <img src={img1} alt="" />
-                </div>
-                <div className="homeinfosection1">
-                    
-                </div>
-            </div> */}
-
         </>
-    )
+    );
 }

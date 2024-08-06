@@ -1,52 +1,97 @@
-import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
+import React, { useRef } from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import img1 from '../../../../New Resources/Experience Design/logo1.png'
+import img2 from '../../../../New Resources/Experience Design/logo2.png'
+import img3 from '../../../../New Resources/Experience Design/logo3.png'
+import img4 from '../../../../New Resources/Experience Design/logo4.png'
+import img5 from '../../../../New Resources/Experience Design/logo5.png'
+import img6 from '../../../../New Resources/Experience Design/logo6.png'
+import img7 from '../../../../New Resources/Experience Design/logo7.png'
+import '../../../../New css/CardSlider/CardSlider.css'
 
 export default function IntegrationInfo() {
 
-    const cardinfo = [
+    const cardsinfo2 = [
         {
-            logo: 'fa-solid fa-crosshairs',
-            title: 'API-Led Integration',
-            desc: 'Our end-to-end API solutions synchronize data, enhance productivity, and drive revenue. Whether using off-the-shelf tools or custom frameworks, we tailor solutions to meet your unique business requirements. An API-led integration strategy connects diverse technologies through standardized, reusable API services, enhancing automation, security, and operational efficiency while reducing technology costs and improving partner interactions.',
+            logo: img3,
+            head: 'API-Led Integration ',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'Our API solutions synchronize data, boost productivity, and drive revenue. Using off-the-shelf tools or customized frameworks, we tailor solutions to your business needs. Our API-led approach connects disparate technologies through reusable services, enhancing automation, security, and efficiency while reducing costs and improving partner interactions.'
         },
         {
-            logo: 'fa-solid fa-rotate',
-            title: 'Data Integration',
-            desc: 'Achieve platform independence with effective data integration, seamlessly consolidating diverse data sources to support better decision-making. This unified approach drives business growth by leveraging comprehensive insights, enhancing agility to adapt to evolving needs, and fostering innovation through advanced technologies.',
+            logo: img4,
+            head: 'Data Integration ',
+            desc1: 'Modernize Your Data Infrastructure',
+            desc: 'Achieve platform independence with seamless data integration, consolidating diverse data sources to support informed decision-making. This unified approach drives business growth by leveraging comprehensive insights, enhancing agility to adapt to evolving needs, and fostering innovation through advanced technologies.'
         },
         {
-            logo: 'fa-solid fa-lightbulb',
-            title: 'Enterprise App Integration',
-            desc: 'Implement real-time, message-based integration between applications to streamline IT landscapes, automate processes, and minimize redundancies. This enhances operational efficiency and simplifies management, ensuring smoother business operations.',
+            logo: img2,
+            head: 'Enterprise App Integration',
+            desc1: 'Build a Strong Data Foundation for Your Data Strategy',
+            desc: "Implement real-time, message-based integration between applications to streamline IT landscapes, automate processes, and minimize redundancies. This enhances operational efficiency and simplifies management, ensuring smoother business operations."
         },
         {
-            logo: 'fa-solid fa-gem',
-            title: 'SaaS Platform Integration',
-            desc: 'Integrate cloud applications with on-premises systems to ensure robust data governance while providing enhanced access, flexibility, and scalability. This integration empowers businesses to harness cloud advantages while maintaining control over critical data and adapting swiftly to changing business requirements.',
+            logo: img3,
+            head: 'SaaS Platform Integration ',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'Integrate cloud applications with on-premises systems to ensure robust data governance while providing enhanced access, flexibility, and scalability. This integration empowers businesses to leverage cloud advantages while maintaining control over critical data and adapting swiftly to changing business requirements.'
         },
     ]
 
+    let sliderRef = useRef(null);
+    const next = () => {
+        sliderRef.slickNext();
+    };
+    const previous = () => {
+        sliderRef.slickPrev();
+    };
+
+    const settings = {
+        className: "center",
+        centerMode: true,
+        centerPadding: '0px',
+        infinite: true,
+        slidesToShow: 3,
+        speed: 500,
+    };
+
     return (
         <>
-            <div className="homeinfomaincontainer">
-                <div className="aboutherosection2">
-                    <img src={img1} alt="" />
-                </div>
-                <div className="homeinfosection1">
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Unlocking Digital Transformation with our Integration Capabilities
+            <div className="slider-container" style={{ width: '65vw', margin: 'auto' }} >
+                <div className="dataenginfodiv1" style={{ marginBottom: '3vh' }}>
+                    <div className="dataenginfomainheader">
+                        <p>Our Integration Services</p>
                     </div>
-                    {cardinfo.map((item, index) => (
-                        <div className='swdevapproachcard' style={{ paddingLeft: '0vh', margin: '0vh 0vw', width: '100%' }}>
-                            <div className='swdevcardsec1'>
-                                <i className={item.logo}></i>
+                </div>
+                <Slider ref={slider => {
+                    sliderRef = slider;
+                }} {...settings}>
+                    {cardsinfo2.map((option, index) => (
+                        <div id="qlikcard" className="slidercard">
+                            <div className="slidercardsection1">
+                                <div className="slidercardlogo">
+                                    <img src={option.logo} alt="" />
+                                </div>
+                                <div className="slidercardheader">
+                                    <p>{option.head}</p>
+                                </div>
                             </div>
-                            <div className='swdevcardsec2'>
-                                <label>{item.title}</label>
-                                <p>{item.desc}</p>
+                            <div className="slidercardsection2">
+                                <div className="slidercarddesc">
+                                    {/* <b style={{ marginBottom: '1.5vh' }}>{option.desc1}</b> */}
+                                    <p>{option.desc}</p>
+                                </div>
                             </div>
                         </div>
                     ))}
+                </Slider>
+                <div style={{ textAlign: "center" }}>
+                    <div className="slider-buttons">
+                        <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn" onClick={previous}></i>
+                        <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn" onClick={next}></i>
+                    </div>
                 </div>
             </div>
         </>

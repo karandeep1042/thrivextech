@@ -1,31 +1,28 @@
 .dataaicards2maincontainer{
-    width: 100vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     gap: 4vh;
-    padding-bottom: 5vh;
+    margin: 8vh auto;
 }
 
 .dataaicards2maincontainerheader{
-    padding: 0vh 4vw;
     font-size: 2rem;
-    color: #0eaae3;
     /* font-weight: 600; */
+    color: #0eaae3;
 }
 
 .dataaicards2maincontainercards{
-    width: 92vw;
     margin: 0 auto;
     margin-top: 3vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 4vw;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .dataaicards2maincontainercard{
-    width: 420px;
-    /* margin-bottom: 6vh; */
+    width: 380px;
+    margin-bottom: 3vh;
     height: 130px;
     border: 1px solid #d3d3d3;
     cursor: pointer;
@@ -36,7 +33,7 @@
 }
 
 .dataaicards2maincontainercard img{
-    /* width: 60%; */
+    /* width: 80%; */
     height: 50%;
 }
 

@@ -6,17 +6,16 @@ import ContactPage from '../Contact Page/ContactPage'
 import CareerHero from './Components/CareerHero'
 import CareerInfo from './Components/CareerInfo'
 import CareerAppForm from './Components/CareerAppForm'
-
+import DataEngineeringHero from '../Data & AI/Data Engineering/Components/DataEngineeringHero'
 export default function Career() {
   return (
     <>
-     <Navbar/>
-     <CareerHero/>
-     <CareerInfo/>
-     {/* <ResumeForm/> */}
-     <CareerAppForm/>
-     {/* <ContactPage/> */}
-     <Footer/> 
+      <Navbar />
+      <DataEngineeringHero heroheader="Careers @ Thrivex" herosubheader="Join Us in Building the Digital Future" herodescription="We're on the lookout for talented individuals to join the Thrivex team." />
+      <CareerInfo />
+      <CareerAppForm />
+      <ContactPage />
+      <Footer />
     </>
   )
 }

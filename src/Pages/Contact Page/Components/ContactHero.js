@@ -4,27 +4,20 @@ import "../../../css/Contact Page/ContactHero.css";
 export default function ContactHero() {
   return (
     <>
-      <div className="contactheromaincontainer">
-        <div className="aboutheroheader">
-          <p>Contact</p>
+      <div className="dataengheromaincontainer">
+        <div className="dataengherodiv1" style={{backgroundColor:'#3E3E3E',backgroundImage:'none'}}>
+          <div className="dataengherodiv1childcontainer">
+            <div className="dataengheromainheader">
+              <p style={{border:'none'}}>Let's Start a <span style={{color:'#0eaae3'}}>Conversation!</span><i style={{marginLeft:'35px'}} className="fa-solid fa-comments"></i></p>
+            </div>
+            <div className="dataengheromainsubheader">
+              <p></p>
+            </div>
+          </div>
         </div>
-        <div className="contactheromediums">
-          <div className="contactheroitem">
-            <i className="fa-solid fa-phone"></i>
-            <p>+91-9820xxx941</p>
-            <span>Mon - Fri 10am - 8pm</span>
-          </div>
-          <div className="contactheroitem">
-            <i className="fa-regular fa-envelope"></i>
-            <p style={{ fontSize: "1.2rem" }}>connect@thethrivex.com</p>
-            <span>Support & information</span>
-          </div>
-          <div className="contactheroitem">
-            <i className="fa-solid fa-location-dot"></i>
-            <p style={{ fontSize: "1.2rem" }}>
-              3 Rockaway St., New Rochelle, NY 1080
-            </p>
-            <span>Office location</span>
+        <div className="dataengherodiv2">
+          <div className="dataengheromaindesc">
+            <p>Share your ideas and vision with us, and together, We can transform them into impactful solutions that drive business growth.</p>
           </div>
         </div>
       </div>

@@ -14,10 +14,9 @@ export default function AboutPage() {
     <>
       <Navbar />
       <AboutHero />
-      {/* <Aboutinfo3 /> */}
-      <AboutInfo2 />
       <AboutInfo />
-      {/* <ContactPage desc="Together, let's embark on a journey of digital evolution and turn your vision into reality."/> */}
+      <AboutInfo2 />
+      <ContactPage />
       <Footer />
     </>
   )

@@ -1,0 +1,64 @@
+.aimlcardsmaincontainer{
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.aimlcardschildcontainer{
+    width: 65vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.aimlcardsdiv1mainheader{
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+}
+
+.aimlcardslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aimlcard{
+    margin: 1vh 0;
+    width: 380px;
+    /* height: 50vh; */
+    display: flex;
+    background-color: rgb(190, 190, 190);
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.aimlcardimg{
+    width: 100%;
+    height: 25vh;
+}
+
+.aimlcardimg img{
+    width: 100%;
+    opacity: .5;
+    height: 25vh;
+}
+
+.aimlcardheader{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0eaae3;
+    padding: 2vh 0;
+}
+
+.aimlcarddescription{
+    font-size: 1.3rem;
+    color: rgb(117, 117, 117);
+}
+
+.aimlcardinfo{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 70%;
+}

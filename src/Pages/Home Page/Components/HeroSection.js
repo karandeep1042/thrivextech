@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="homeheromaincontainer" id="hero" >
-        <AutoplaySlider play={true} interval={7000} buttons={false} animation="scaleOutAnimation" style={{ height: '100%' }}>
+        <AutoplaySlider  play={true} interval={7000} buttons={false} animation="scaleOutAnimation" style={{ height: '100%' }}>
           <div style={{backgroundColor : '#0eaae3',color : 'white',fontSize : '2rem',fontWeight : '600'}}>Slide 1</div>
           <div style={{backgroundColor : '#0eaae3',color : 'white',fontSize : '2rem',fontWeight : '600'}}>Slide 2</div>
           <div style={{backgroundColor : '#0eaae3',color : 'white',fontSize : '2rem',fontWeight : '600'}}>Slide 3</div>

@@ -3,7 +3,7 @@ import React from 'react'
 export default function CookiePolicyBody() {
     return (
         <>
-            <div className="privacypolicybodymaincontainer" style={{paddingTop:'5vh'}}>
+            <div className="privacypolicybodymaincontainer" style={{paddingTop:'8vh'}}>
                 <div className="cookiepolicybodymainheader">
                     <p>
                         Cookie Policy

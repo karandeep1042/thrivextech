@@ -1,5 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+// import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import '../../../css/SAP BTP/SapbtpCards1.css';
+import '../../../New css/CardSlider/CardSlider.css'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 
 export default function SapbtpCards1() {
 
@@ -24,48 +31,71 @@ export default function SapbtpCards1() {
             desc1: "AI, machine learning, and IoT are getting embedded into everything, enabling automation of complex business processes and integration of disparate solutions",
             desc2: "SAP Intelligent Robotic Process Automation (SAP Intelligent RPA), SAP Business AI Services"
         },
-    ]
+    ];
+
 
     return (
         <>
             <div className='sapbtpcards1maincontainer'>
                 <div className='sapbtpcardsheader'>
-                More Than a Platform-As-A-Service
+                    More Than a Platform-As-A-Service
                 </div>
                 <div className='sapbtpcards'>
-                    {cardsinfo.map((option, index) => (
-                        <div className='sapbtpcard'>
-                            <div className='sapbtpheadersection'>
-                                <div className='sapbtpheadersectionin'>
-                                    {option.title}
-                                </div>
+                    <div className="card-slider-container">
+                        <div className="card-slider">
+                            <Swiper
+                                effect='coverflow'
+                                centeredSlides={true}
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                loop={true}
+
+                                coverflowEffect={{
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 60,
+                                    modifier: 1,
+                                    slideShadows: false
+                                }}
+                                navigation={{
+                                    nextEl: '.rightslidebtn',
+                                    prevEl: '.leftslidebtn'
+                                }}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
+                                className="mySwiper"
+                                wrapperTag='swiperwrapper'
+                            // style={{transform: translate3d(-371.667px, 0px, 0px)}}
+                            >
+                                {cardsinfo.map((option, index) => (
+                                    
+                                    <SwiperSlide SwiperSlide className = "card card-enter" key = { index } >
+                                    <div className='sapbtpcard'>
+                                        <div className='sapbtpheadersection'>
+                                            <div className='sapbtpheadersectionin'>
+                                                {option.title}
+                                            </div>
+                                        </div>
+                                        <div className='sapdescription'>
+                                            <div className="sapdescription1">
+                                                {option.desc1}
+                                            </div>
+                                            <div className="sapdescription2">
+                                                <b>Products include: </b>
+                                                {option.desc2}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </SwiperSlide>
+                                ))}
+                            <div className="slider-buttons">
+                                <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn"></i>
+                                <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn"></i>
                             </div>
-                            <div className='sapdescription'>
-                                <div className="sapdescription1">
-                                    {option.desc1}
-                                </div>
-                                <div className="sapdescription2">
-                                    <b>Products include: </b>
-                                    {option.desc2}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                        </Swiper>
+                    </div>
                 </div>
-                {/* <div className='sapbtpcardsheader'>
-                    Business-Centric Focus
-                </div>
-                <div className='sapbtpcardsdescription'>
-                    SAP BTP stands out with its business-oriented approach. It offers a comprehensive range of pre-packaged services and content tailored to specific requirements, such as country-specific tax calculations and electronic invoicing. With extensive business APIs, industry-specific content, pre-configured workflows, and robotic process automation (RPA) bots, SAP BTP facilitates rapid innovation and the development of new solutions. <br /><br />
-                    The platform supports multiple hyperscalers, including AWS, Microsoft Azure, Alibaba Cloud, and Google Cloud Platform, allowing you to choose your preferred infrastructure. Additionally, it ensures interoperability with various PaaS vendors and the open-source community.<br />
-                </div>
-                <div className='sapbtpcardsheader'>
-                    Quick Start and Flexible Payment Models
-                </div>
-                <div className='sapbtpcardsdescription'>
-                    The RISE with SAP S/4HANA transformation package includes credits for SAP BTP, enabling a quick start. SAP offers flexible payment models: a monthly subscription for specific services, pre-purchased cloud credits for use through the Cloud Platform Enterprise Agreement (CPEA), or a pay-as-you-go model based on consumption. These models can be combined within a global account to suit your needs.
-                </div> */}
             </div>
+        </div >
         </>
     )
 }

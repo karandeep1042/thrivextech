@@ -1,8 +1,10 @@
 .sapbtpcards1maincontainer {
-    padding: 0 4vw;
+    /* padding: 8vh 4vw; */
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    width: 65vw;
+    margin: 8vh auto;
 }
 
 .sapbtpcardsheader {
@@ -19,7 +21,11 @@
     box-shadow: 0 4px 8px 0 rgba(218, 218, 218, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 0.19);
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 300px;
+    /* width: 200%; */
+    transform: scale(0.95);
+    height: 60vh;
+    /* margin: 0 5vw; */
+    transition: all .3s;
     display: flex;
     flex-direction: column;
 }
@@ -30,14 +36,15 @@
     border-top-right-radius: 15px;
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 20vh;
     justify-content: center;
-    background-color: #0eaae3;
+    /* background-color: #0eaae3; */
+    background-color: rgb(117,117,117);
 }
 
 .sapbtpheadersectionin {
     width: 70%;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 600;
 }
@@ -51,6 +58,7 @@
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    font-size: 1.3rem;
 }
 
 .sapdescription ul li::marker {
@@ -67,7 +75,7 @@
 
 .sapbtpcards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .sapbtpcards2description ul {
@@ -134,4 +142,71 @@
     display: flex;
     flex-direction: column;
     gap: 1vh;
+}
+
+.sapbtpcardmainheader {
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+    font-weight: 600;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
+}
+
+
+.swiperwrapper {
+    transform: translate3d(-571.667px, 0px, 0px);
+}
+
+.swiper-3d .swiper-wrapper {
+    transform: translate3d(-419.667px, 0px, 0px);
+}
+
+/* .slick-slide > div {
+  margin: 0 3vw;
+} */
+
+/* .slick-active > div {
+  margin: 0 1vw;
+} */
+
+.slick-track::before{
+    display: flex;
+    gap: 1vw;
+}
+
+.slick-current .sapbtpcard .sapbtpheadersection{
+    background-color: #0eaae3;
+}
+
+.slick-current {
+    transform: scale(1);
+    height: 100%;
+}
+
+.slide-track{
+    overflow: visible;
+}
+
+.slick-current .sapbtpcard{
+    transform: scale(1.00);
+}
+
+.slick-slider button{
+    display: none;
+}
+
+.slick-prev:before{
+    content: "" !important;
+    display: none;
+}
+
+.slick-next:before{
+    content: "" !important;
+    display: none;
 }

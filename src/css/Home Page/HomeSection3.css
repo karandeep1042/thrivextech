@@ -10,7 +10,7 @@
 
 .homepagesection3mainheader p {
     font-size: 2rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #0eaae3;
 }
 
@@ -58,6 +58,19 @@
 }
 
 .homesection3cardsubcard {
+    box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
+    border-radius: 5px;
+    width: 700px;
+    padding: 20px;
+    margin-bottom: 3vh;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.homesection3cardsubcard2 {
+    color: black;
+    text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
     border-radius: 5px;
     width: 700px;

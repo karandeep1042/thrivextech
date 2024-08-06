@@ -17,7 +17,7 @@ export default function ContactPage(props) {
     <>
       <div className="contactpagemaincontainer">
         <div className="contactpageheader">{head1}<span>{head2}</span></div>
-        <div className="contactpageheader" style={{ fontSize: '1.35rem', textAlign: 'center', width: '60vw' }}>{desc}</div>
+        <div className="contactpageheader" style={{ fontSize: '1.6rem', textAlign: 'center', width: '60vw' }}>{desc}</div>
         <Link to='/contact' style={{ textDecoration: 'none', color: 'white' }} className="contactpagebutton">Contact Us</Link>
       </div>
     </>

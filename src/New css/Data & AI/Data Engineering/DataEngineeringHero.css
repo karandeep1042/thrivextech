@@ -1,0 +1,72 @@
+.dataengheromaincontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 8vh 0;    
+    margin-top: 15vh;
+}
+
+.dataengherodiv1childcontainer{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.dataengherodiv1{
+    width: 100%;
+    background-image: url('../../../New Resources/Universal/heroImage.png');
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+.dataengheromainheader{
+    display: flex;
+}
+
+.dataengheromainheader p{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    border: 2px solid white;
+    color: white;
+}
+
+.dataengheromainsubheader{
+    width: 55%;
+}
+
+.dataengheromainsubheader p{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.dataengherodiv2{
+    width: 65vw;
+    font-size: 1.6rem;
+    margin: 8vh auto;
+    margin-bottom: 0vh;
+    color: rgb(53, 53, 53);
+    display: flex;
+    align-items: center;
+}
+
+.dataengherolistheader{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0eaae3;
+}
+
+.dataengherolistdescription{
+    margin-top: 2vh;
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+}
+
+.dataengherolists{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}

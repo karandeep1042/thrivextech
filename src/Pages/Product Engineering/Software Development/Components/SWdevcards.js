@@ -1,74 +1,95 @@
-import React from 'react'
-import img1 from '../../../../Resources/Product Engineering/swdevcard1.jpeg'
-import img2 from '../../../../Resources/Product Engineering/swdevcard2.webp'
-import img3 from '../../../../Resources/Product Engineering/swdevcard3.jpg'
-import img4 from '../../../../Resources/Product Engineering/swdevcard4.jpeg'
-import img5 from '../../../../Resources/Product Engineering/swdevcard5.jpg'
-import img6 from '../../../../Resources/Product Engineering/swdevcard6.webp'
-import img7 from '../../../../Resources/Product Engineering/swdevcard7.jpeg'
+import React, { useRef } from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import img1 from '../../../../New Resources/Experience Design/logo1.png'
+import img2 from '../../../../New Resources/Experience Design/logo2.png'
+import img3 from '../../../../New Resources/Experience Design/logo3.png'
+import img4 from '../../../../New Resources/Experience Design/logo4.png'
+import img5 from '../../../../New Resources/Experience Design/logo5.png'
+import img6 from '../../../../New Resources/Experience Design/logo6.png'
+import img7 from '../../../../New Resources/Experience Design/logo7.png'
+import '../../../../New css/CardSlider/CardSlider.css'
 
 export default function SWdevcards() {
-    const cultureData = [
+    const cardsinfo2 = [
         {
-            img: img1,
-            title: 'Architecture Design',
-            description: 'From concept to execution, we offer end-to-end solutions tailored to your needs. Our architects collaborate closely with you to design, build, and maintain functional technology solutions. Serving as the bridge between your business and technology stakeholders, we translate business requirements into robust technical architecture. This ensures that your solutions not only disrupt the market but also continually drive business value.'
+            logo: img3,
+            head: 'Architecture Design',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'From concept to execution, we offer end-to-end solutions tailored to your needs. Our architects collaborate closely with you to design, build, and maintain functional technology solutions. Serving as the bridge between your business and technology stakeholders, we translate business requirements into robust technical architecture that disrupts the market and continually drives business value.'
         },
         {
-            img: img2,
-            title: 'AI-Assisted Development',
-            description: 'In a landscape of ever-changing customer behaviour, agility and accuracy are paramount. Our proficient software application development experts utilize AI-assisted development to expedite your time to market without compromising quality. Achieve your business objectives while saving valuable time and resources.'
+            logo: img4,
+            head: 'Application Development',
+            desc1: 'Modernize Your Data Infrastructure',
+            desc: 'From concept to execution, we offer end-to-end solutions tailored to your needs. Our architects collaborate closely with you to design, build, and maintain functional technology solutions. Serving as the bridge between your business and technology stakeholders, we translate business requirements into robust technical architecture that disrupts the market and continually drives business value.'
         },
         {
-            img: img3,
-            title: 'Application Development',
-            description: 'Software application development is at the core of our expertise. You can bring us your vision, and we will devise the best strategy to bring it to life. Working as your close partner, we function as an extension of your team, staying abreast of your business needs and software product backlogs.'
+            logo: img2,
+            head: 'Progressive Apps',
+            desc1: 'Build a Strong Data Foundation for Your Data Strategy',
+            desc: "We help clients in developing progressive web apps that prioritize fast and reliable user experiences across various networks and devices. Leveraging modern APIs, we ensure your web applications are consistently dependable and capable, regardless of the usage environment."
         },
         {
-            img: img4,
-            title: 'Low-Code Platforms',
-            description: 'Unlock productivity, and innovation in your business by harnessing the power of low-code platforms and app-building software. Enhance your organizations agility and streamline development processes with speed and flexibility. As your software development partner, we will assist you in constructing feature-rich, user-friendly applications faster and reduce maintenance efforts.'
-        },
-        {
-            img: img5,
-            title: 'Progressive Apps',
-            description: 'We help clients in developing progressive web apps that prioritize fast and reliable user experiences across various networks and devices. Leveraging modern APIs, we ensure your web applications are consistently dependable and capable, regardless of usage environment.'
-        },
-        {
-            img: img6,
-            title: 'Continuous Integration and Delivery',
-            description: 'Experience custom software development solutions that consistently meet your business requirements through our agile methodology. Our scrum development teams continuously build, package, and test applications, guaranteeing optimal user experiences with every deployment.'
-        },
-        {
-            img: img7,
-            title: 'Rapid Prototyping and Innovation',
-            description: 'Stay ahead of the competition by seizing opportunities promptly. Our team of software application development experts utilizes rapid prototyping to efficiently bring concepts from idea to implementation. Through iterative development and rigorous testing, we empower you to confidently and efficiently deploy new products.'
+            logo: img3,
+            head: 'Rapid Prototyping and Innovation',
+            desc1: 'Transforming Challenges into Insights',
+            desc: 'Stay ahead of the competition by seizing opportunities promptly. Our team of software application development experts utilizes rapid prototyping to efficiently bring concepts from idea to implementation. Through iterative development and rigorous testing, we empower you to confidently and efficiently deploy new products.'
         },
     ]
 
+    let sliderRef = useRef(null);
+    const next = () => {
+        sliderRef.slickNext();
+    };
+    const previous = () => {
+        sliderRef.slickPrev();
+    };
+
+    const settings = {
+        className: "center",
+        centerMode: true,
+        centerPadding: '0px',
+        infinite: true,
+        slidesToShow: 3,
+        speed: 500,
+    };
+
     return (
         <>
-            <div className="careerculturemaincontainer">
-                <div className="careerculturechildcontainer">
-                    <div className="careercultureheader">
-                        <p>Software Development <span>Services </span></p>
+            <div className="slider-container" style={{ width: '65vw', margin: 'auto' }} >
+                <div className="dataenginfodiv1" style={{ marginBottom: '3vh' }}>
+                    <div className="dataenginfomainheader">
+                        <p>Our Services</p>
                     </div>
-                    <div className="careerculturecards">
-                        {cultureData.map((item, index) => (
-                            <div className="careerculturecard" style={{ margin: '2vh 1vw' }}>
-                                <div className="careerculturecardimg">
-                                    <img src={item.img} alt="" />
+                </div>
+                <Slider ref={slider => {
+                    sliderRef = slider;
+                }} {...settings}>
+                    {cardsinfo2.map((option, index) => (
+                        <div id="swdevcard" className="slidercard">
+                            <div className="slidercardsection1">
+                                <div className="slidercardlogo">
+                                    <img src={option.logo} alt="" />
                                 </div>
-                                <div className="careerculturecardinfo">
-                                    <div className="careeerculturecardtitle">
-                                        {item.title}
-                                    </div>
-                                    <div className="careeerculturecarddescription">
-                                        {item.description}
-                                    </div>
+                                <div className="slidercardheader">
+                                    <p>{option.head}</p>
                                 </div>
                             </div>
-                        ))}
+                            <div className="slidercardsection2">
+                                <div className="slidercarddesc">
+                                    {/* <b style={{ marginBottom: '1.5vh' }}>{option.desc1}</b> */}
+                                    <p>{option.desc}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+                <div style={{ textAlign: "center" }}>
+                    <div className="slider-buttons">
+                        <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn" onClick={previous}></i>
+                        <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn" onClick={next}></i>
                     </div>
                 </div>
             </div>

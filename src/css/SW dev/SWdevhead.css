@@ -1,6 +1,6 @@
 .swdevheadmaincontainer {
-    width: 80vw;
-    margin: 0 auto;
+    width: 65vw;
+    margin: auto;
     display: flex;
     gap: 5vw;
     margin-top: 5vh;
@@ -26,121 +26,51 @@
     margin-left: 1.5vw;
 }
 
-.allengsermaincontainer {
-    /* display: flex;
-    flex-direction: column; */
-    width: 90vw;
-    padding: 4vh 0vw;
-    padding-bottom: 8vh;
-}
-
-.allengsercard:hover {
-    transform: scale(1.02);
-}
-
-.allengsercard {
-    box-shadow: 0 4px 8px 0 rgba(139, 139, 139, 0.2), 0 6px 20px 0 rgba(136, 136, 136, 0.19);
-    cursor: pointer;
-    width: 470px;
-    height: 550px;
-    transition: .3s;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 5vh;
-}
-
-.allengsercardimg {
-    width: 100%;
-    height: 40%;
-    background-color: #0eaae3;
-}
-
-.allengsercardheading {
-    background-color: #e1e1e1;
-    /* width: ; */
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    font-weight: 600;
-    font-size: 1.3rem;
-    height: 120px;
-}
-
-.allengsermaincontainer {
-    margin: 0 auto;
-    margin-top: 5vh;
-    width: 90vw;
-    display: flex;
-    gap: 4vh;
-    font-size: 3rem;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.allengsercards{
-    display: flex;
-    justify-content: space-between;
-}
-
-.allengsercardsheader{
-    font-size: 2rem;
-    padding-bottom: 4vh;
-    color: #0eaae3;
-}
-
-.allengsercardimg img {
-    width: 100%;
-    height: 100%;
-}
-
-.dataaicard{
+.dataaicard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 400px;
-    /* height: 500px; */
     border: 1px solid rgb(195, 195, 195);
     padding: 10px;
 }
 
-.dataaicardimage{
+.dataaicardimage {
     width: 100%;
     height: 250px;
     /* height: 45%; */
 }
 
-.dataaicardimage img{
+.dataaicardimage img {
     width: 100%;
     height: 100%;
 }
 
-.dataaicardinfo{
+.dataaicardinfo {
     display: flex;
     flex-direction: column;
     margin-top: 2vh;
     gap: 2vh;
 }
 
-.dataaicardinfo label{
+.dataaicardinfo label {
     font-size: 2rem;
     font-weight: 600;
     color: #595959;
 }
 
-.dataaicardinfo p{
-    /* line-break: anywhere; */
+.dataaicardinfo p {
     margin-top: 3vh;
     font-size: 1.3rem;
     color: #7f7f7f
 }
 
-.dataaiexplorebtn{
+.dataaiexplorebtn {
     margin-top: 3vh;
     width: 100%;
 }
 
-.dataaibtncontainer{
+.dataaibtncontainer {
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -150,8 +80,68 @@
     cursor: pointer;
 }
 
-.dataaibtncontainer i{
+.dataaibtncontainer i {
     font-size: 1.3rem;
 
     padding-top: 5px;
+}
+
+.allengsermaincontainer {
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.allengserchildcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.allengsercardsheader {
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+    /* text-align: center; */
+}
+
+.allengsercards {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allengsercard {
+    width: 32%;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #3e3e3e;
+}
+
+.allengsercard:hover {
+    background-color: #4e4e4e;
+    transition: .3s;
+}
+
+.allengsercarddiv1 {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 10px;
+    color: white;
+    /* justify-content: space-evenly; */
+}
+
+.allengsercardimg i {
+    font-size: 3rem;
+}
+
+.allengsercardheading {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.allengsercarddiv2 {
+    padding: 0px 40px;
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 40px;
 }

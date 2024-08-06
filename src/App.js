@@ -30,6 +30,7 @@ import DataAi from "./Pages/Data & AI/Data & AI/DataAi";
 import DataEngineering from "./Pages/Data & AI/Data Engineering/DataEngineering";
 import InsightsAnalytics from "./Pages/Data & AI/Insights & Analytics/InsightsAnalytics";
 import AIML from "./Pages/Data & AI/AI & ML/AIML";
+import CardSlider from "./Pages/CardSlider/CardSlider";
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/errorpage" element={<Error404Page />} />
           <Route path="/viewblog" element={<ViewBlog />} />
-          <Route path="*" element={<Error404Page />} />
+          {/* <Route path="*" element={<Error404Page />} /> */}
           <Route path="/digitaltalentsolutions" element={<DigitalTalentSolutions />} />
           <Route path="/experiencedesign" element={<ExperienceDesign />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
@@ -66,6 +67,7 @@ function App() {
           <Route path="/dataengineering" element={<DataEngineering/>} />
           <Route path="/insightsanalytics" element={<InsightsAnalytics/>} />
           <Route path="/aiml" element={<AIML/>} />
+          <Route path="/cardslider" element={<CardSlider/>} />
         </Routes>
       </BrowserRouter>
     </>

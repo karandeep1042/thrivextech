@@ -1,0 +1,26 @@
+.trendingtechmaincontainer {
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.trendingtechchildcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.trendingtechmainheader {
+    font-size: 2rem;
+    color: #0eaae3;
+    /* font-weight: 600; */
+}
+
+.trendingtechdiv2 {
+    margin-top: 8vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.trendingtechdiv2 img {
+    width: 48%;
+}

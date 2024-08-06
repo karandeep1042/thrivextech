@@ -1,0 +1,56 @@
+.insightsanalyticsinfomaincontainer {
+    width: 100vw;
+    margin: 8vh 0;
+}
+
+.insightsanalyticsinfochildcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.insightsanalyticsinfoheader {
+    font-size: 2rem;
+    /* font-weight: 600; */
+    color: #0eaae3;
+}
+
+.insightsanalyticsinfodescription{
+    margin-top: 3vh;
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+}
+
+.insightsanalyticsinfolists{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    gap: 6vh;
+}
+
+.insightsanalyticsinfolist{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-shadow: 0px 10px #0eaae3;
+}
+
+.insightsanalyticsinfolistheader{
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+    font-weight: 600;
+}
+
+.insightsanalyticsinfolistdescription{
+    font-size: 1.5rem;
+    margin-top: 3vh;
+    color: rgb(117, 117, 117);
+}
+
+.insightsanalyticsinfodiv2{
+    margin-top: 4vh;
+}
+
+.insightsanalyticsinfodiv2 img{
+    width: 100%;
+}

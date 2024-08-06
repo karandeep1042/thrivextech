@@ -1,0 +1,28 @@
+.dataenginfomaincontainer {
+    width: 100vw;
+    /* background-color: #3E3E3E; */
+    margin: 8vh 0;
+    /* padding: 4vh 0; */
+}
+
+.dataenginfochildcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.dataenginfomainheader {
+    font-size: 2rem;
+    color: #0eaae3;
+    /* font-weight: 600; */
+}
+
+.dataenginfodiv2 {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dataenginfodiv2 img {
+    width: 100%;
+}

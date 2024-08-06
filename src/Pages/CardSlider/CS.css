@@ -1,0 +1,44 @@
+/* App.css */
+.card-slider {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.card {
+    min-width: 200px;
+    /* Adjust this value based on your design */
+    margin: 0 10px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transitions */
+}
+
+.card-fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.card-enter {
+    /* opacity: 0; */
+    transform: scale(0.9);
+}
+
+.card-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-buttons i {
+    font-size: 24px;
+    cursor: pointer;
+}

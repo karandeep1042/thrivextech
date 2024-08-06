@@ -1,10 +1,11 @@
 import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
+import img1 from '../../../../New Resources/Universal/heroImage.png'
+import '../../../../New css/Data & AI/Data Engineering/DataEngineeringHero.css'
 
-export default function DataEngineeringHero() {
+export default function DataEngineeringHero(props) {
     return (
         <>
-            <div className="aboutheroheader" >
+            {/* <div className="aboutheroheader" >
                 <p>Data Engineering</p>
             </div>
             <div className="dtsheromaincontainer">
@@ -21,6 +22,23 @@ export default function DataEngineeringHero() {
                 </div>
                 <div className="aboutherosection2">
                     <img src={img1} alt="" />
+                </div>
+            </div> */}
+            <div className="dataengheromaincontainer">
+                <div className="dataengherodiv1">
+                    <div className="dataengherodiv1childcontainer">
+                        <div className="dataengheromainheader">
+                            <p>{props.heroheader}</p>
+                        </div>
+                        <div className="dataengheromainsubheader">
+                            <p>{props.herosubheader}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="dataengherodiv2">
+                    <div className="dataengheromaindesc">
+                        <p>{props.herodescription}</p>
+                    </div>
                 </div>
             </div>
         </>
