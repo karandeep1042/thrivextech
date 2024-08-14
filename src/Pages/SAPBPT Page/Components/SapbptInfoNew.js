@@ -4,12 +4,10 @@ import { FadeIn, FadeUp, SlideRight } from '../../Animations/Animations'
 
 export default function SapbptInfoNew() {
     const switchtab = (evt, index) => {
-        let elements = document.getElementsByClassName('sap1info2tabdiv2')
-        let elements2 = document.getElementsByClassName('sap1info2tabhead')
-        console.log(evt);
+        let elements = document.getElementsByClassName('sap1info2tabdiv2');
+        let elements2 = document.getElementsByClassName('sap1info2tabhead');
         for (let i = 0; i < elements.length; i++) {
             if (i == index) {
-                console.log(elements[i]);
                 elements[i].classList.add('tabactive');
                 elements2[i].classList.add('headactive');
             }

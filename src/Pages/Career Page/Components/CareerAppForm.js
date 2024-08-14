@@ -58,37 +58,30 @@ export default function CareerAppForm() {
         })
 
         res = await res.json();
-        console.log(res.msg);
 
         if (res.msg == 'sent') {
-            // enableScroll()
             setIsLoading(false);
             document.querySelector('.submitemailpopup').style.transform = "scale(1)";
         } else {
             setIsLoading(false);
-            // enableScroll()
             document.querySelector('.submitemailpopupfailed').style.transform = "scale(1)";
         }
     };
 
     const checkEveryField = () => {
-        console.log(document.querySelector('resumefile'));
         emptyCounter = 0;
         const elements = document.getElementsByClassName("sapbtpinputtext");
         const element2 = document.querySelector(".sapbtptextarea");
         const errormsg = document.getElementsByClassName("formerrormessage");
-        console.log(elements);
 
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
-            // console.log(element);
             if (element.value == "" || elements[i].value == "Select...") {
                 element.style.border = "1px solid red"
                 emptyCounter++;
                 errormsg[i].style.visibility = "visible"
                 errormsg[i].innerHTML = "This field cannot be empty"
                 emptyCounter++;
-                // console.log(i);
 
             } else {
                 element.style.border = "none"
@@ -107,7 +100,6 @@ export default function CareerAppForm() {
             errormsg[4].style.visibility = "hidden"
         }
         
-        console.log(elements[3]);
         if (!elements[3].value.includes("@") || !elements[3].value.includes(".com")) {
             elements[3].style.border = "1px solid red"
             errormsg[3].style.visibility = "visible"
@@ -126,7 +118,6 @@ export default function CareerAppForm() {
     const customBase64Uploader = async (event) => {
         // convert file to base64 encoded
         const file = event.target.files[0];
-        console.log(event.target.value);
         if (event.target.files && file) {
             const reader = new FileReader();
             reader.onloadend = function () {

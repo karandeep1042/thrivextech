@@ -86,7 +86,6 @@ export default function ContactForm() {
     emptyCounter = 0;
     const elements = document.getElementsByClassName("sapbtpinputtext");
     const errormsg = document.getElementsByClassName("formerrormessage");
-    console.log(elements);
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
       if (element.value == "") {
@@ -94,7 +93,6 @@ export default function ContactForm() {
         emptyCounter++;
         errormsg[i].style.visibility = "visible"
         errormsg[i].innerHTML = "This field cannot be empty"
-        // console.log("empty error");
 
       } else if (element.value == "Select...") {
         element.style.border = "1px solid red"
@@ -126,7 +124,7 @@ export default function ContactForm() {
       errormsg[2].style.visibility = "visible"
     }
 
-    console.log(emptyCounter);
+    
     if (emptyCounter == 0) {
       sendMessage();
     }

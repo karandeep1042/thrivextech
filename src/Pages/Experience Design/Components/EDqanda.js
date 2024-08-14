@@ -38,16 +38,15 @@ export default function EDqanda() {
     const toggleAccordion = (e) => {
         const faqs = document.querySelectorAll('.accordionicon');
         const faqsans = document.querySelectorAll('.edqandaanswer');
-        console.log(e);
 
         faqsans[e].classList.toggle("edqandaansweractive");
         faqs[e].classList.toggle("accordioniconrotate");
         if (!faqs[e].className.includes("edqandaansweractive")) {
             faqs[e].classList.add("edqandaansweractive");
-            console.log(faqs[e].style.transform = "rotate(180deg");
+            faqs[e].style.transform = "rotate(180deg)";
         } else {
             faqs[e].classList.remove("edqandaansweractive");
-            console.log(faqs[e].style.transform = "rotate(0deg");
+            faqs[e].style.transform = "rotate(0deg)";
         }
     }
 

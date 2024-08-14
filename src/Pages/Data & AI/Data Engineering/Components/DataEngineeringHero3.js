@@ -1,4 +1,5 @@
 import React from 'react'
+
 import img1 from '../../../../Resources/dtshero.jpg'
 
 export default function DataEngineeringHero3() {

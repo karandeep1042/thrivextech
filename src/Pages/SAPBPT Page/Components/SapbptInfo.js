@@ -24,9 +24,8 @@ export default function SapbptInfo() {
     ]
 
     useEffect(() => {
-        let elements = document.getElementsByClassName('sapbtpinfolistdiv2')
-        // console.log(document.querySelector('.sapbtpinfolistdiv2'));
-        let elements2 = document.getElementsByClassName('sapbtpinfolistdiv1')
+        let elements = document.getElementsByClassName('sapbtpinfolistdiv2');
+        let elements2 = document.getElementsByClassName('sapbtpinfolistdiv1');
         for (let i = 0; i < elements.length; i++) {
             let eleh = elements[i].clientHeight * 1.25;
             elements2[i].style.height = `${eleh}px`

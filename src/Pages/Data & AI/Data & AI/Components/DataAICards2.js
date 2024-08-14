@@ -20,19 +20,12 @@ export default function DataAICards2() {
         let maxWidth=0,index;
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
-            console.log(element.clientWidth);
             
             if(element.clientWidth > maxWidth){
                 maxWidth = element.clientWidth
-                console.log(element);
-                
                 index=i;
             }
         }
-        // console.log(elements);
-        // console.log(index);
-        
-        // console.log(maxWidth);
 
         let elements2 = document.getElementsByClassName('dataaicards2maincontainercard');
 

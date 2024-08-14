@@ -32,8 +32,6 @@ export default function CookieConsent() {
                 value = val.substring(name.length);
             }
         })
-
-        console.log(value);
         return value;
     }
 
