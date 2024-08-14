@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import '../../../New css/Experience Design/EDNewInfo.css'
-import img1 from '../../../New Resources/Experience Design/EDInfo.png'
+import img1 from '../../../Images/Experience Design Page/EDInfo.png'
 import { FadeUp } from '../../Animations/Animations';
 export default function EDNewInfo() {
 

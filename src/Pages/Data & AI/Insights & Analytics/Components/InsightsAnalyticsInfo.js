@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../../New css/Data & AI/Insights & Analytics/InsightsAnalyticsInfo.css'
-import img1 from '../../../../New Resources/Insights & Analytics/info.png'
-import img2 from '../../../../New Resources/Insights & Analytics/mainpic.png'
+import img1 from '../../../../Images/Data & AI/Insights & Analytics/info.png'
+import img2 from '../../../../Images/Data & AI/Insights & Analytics/mainpic.png'
 import { FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations'
 
 export default function InsightsAnalyticsInfo() {

@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import img1 from '../../../New Resources/Qlik/Picture1.png'
-import img2 from '../../../New Resources/Qlik/Picture2.png'
-import img3 from '../../../New Resources/Qlik/Picture3.png'
-import img4 from '../../../New Resources/Qlik/Picture4.png'
-import img5 from '../../../New Resources/Qlik/Picture5.png'
-import img6 from '../../../New Resources/Qlik/Picture6.png'
-import img7 from '../../../New Resources/Qlik/Picture7.png'
+import img1 from '../../../Images/Qlik/Picture1.png'
+import img2 from '../../../Images/Qlik/Picture2.png'
+import img3 from '../../../Images/Qlik/Picture3.png'
+import img4 from '../../../Images/Qlik/Picture4.png'
+import img5 from '../../../Images/Qlik/Picture5.png'
+import img6 from '../../../Images/Qlik/Picture6.png'
+import img7 from '../../../Images/Qlik/Picture7.png'
 import '../../../New css/CardSlider/CardSlider.css'
 import { FadeUp } from '../../Animations/Animations';
 

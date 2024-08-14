@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../../New css/Product Engineering/Software Engineering/TrendingTechnologies.css'
-import img1 from '../../../../New Resources/Product Engineering/Software Development/tt1.png'
-import img2 from '../../../../New Resources/Product Engineering/Software Development/tt2.png'
+import img1 from '../../../../Images/Product Engineering/Software Development/tt1.png'
+import img2 from '../../../../Images/Product Engineering/Software Development/tt2.png'
 import { FadeUp, ScaleUp, SlideLeft, SlideRight } from '../../../Animations/Animations'
 
 export default function TrendingTechnologies() {

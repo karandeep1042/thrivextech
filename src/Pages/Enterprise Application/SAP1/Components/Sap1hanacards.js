@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import img1 from '../../../../New Resources/S4HANA/Picture1.png'
-import img2 from '../../../../New Resources/S4HANA/Picture2.png'
-import img3 from '../../../../New Resources/S4HANA/Picture3.png'
-import img4 from '../../../../New Resources/S4HANA/Picture4.png'
-import img5 from '../../../../New Resources/S4HANA/Picture5.png'
+import img1 from '../../../../Images/SAP S4 HANA/Picture1.png'
+import img2 from '../../../../Images/SAP S4 HANA/Picture2.png'
+import img3 from '../../../../Images/SAP S4 HANA/Picture3.png'
+import img4 from '../../../../Images/SAP S4 HANA/Picture4.png'
+import img5 from '../../../../Images/SAP S4 HANA/Picture5.png'
 import '../../../../New css/CardSlider/CardSlider.css'
 import { FadeUp } from '../../../Animations/Animations';
 

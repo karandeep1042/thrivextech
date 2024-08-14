@@ -1,10 +1,5 @@
 import React from 'react'
-import img5 from '../../../../Resources/Product Engineering/SWdevhero.jpg'
-import img2 from '../../../../Resources/Product Engineering/modernizatiohero.jpg'
-import img3 from '../../../../Resources/Product Engineering/cloudnativehero.webp'
-import img4 from '../../../../Resources/Product Engineering/integrationhero.jpg'
 import { Link } from 'react-router-dom'
-import { FadeUp, SlideRight } from '../../../Animations/Animations'
 
 export default function AllEngineeringServices(props) {
 

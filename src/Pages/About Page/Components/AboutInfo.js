@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../css/Home Page/HomeInfo.css";
-import img1 from '../../../Resources/About page/img1.png'
+import img1 from '../../../Images/About Page/img1.png'
 import '../../../css/About Page/AboutInfo.css'
 import { FadeLeft, FadeRight, FadeUp } from "../../Animations/Animations";
 

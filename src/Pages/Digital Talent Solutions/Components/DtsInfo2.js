@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../Resources/dtsinfo.jpg'
 import '../../../New css/Digital Talent Solutions/DtsInfo2.css'
 import { FadeUp } from '../../Animations/Animations'
 

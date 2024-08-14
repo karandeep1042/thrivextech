@@ -8,7 +8,7 @@ import ContactPage from '../../Contact Page/ContactPage'
 import AllEngineeringServices from '../Software Development/Components/AllEngineeringServices'
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import TrendingTechnologies from '../Software Development/Components/TrendingTechnologies'
-
+import '../../../css/Cloud Native/CloudNativeHero2.css'
 export default function CloudNative() {
   return (
     <>

@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import img1 from '../../../../New Resources/AI & ML/Picture1.png'
-import img2 from '../../../../New Resources/AI & ML/Picture2.png'
-import img3 from '../../../../New Resources/AI & ML/Picture3.png'
-import img4 from '../../../../New Resources/AI & ML/Picture4.png'
+import img1 from '../../../../Images/Data & AI/AI & ML/Picture1.png'
+import img2 from '../../../../Images/Data & AI/AI & ML/Picture2.png'
+import img3 from '../../../../Images/Data & AI/AI & ML/Picture3.png'
+import img4 from '../../../../Images/Data & AI/AI & ML/Picture4.png'
 import '../../../../New css/CardSlider/CardSlider.css'
 import { FadeUp } from '../../../Animations/Animations';
 

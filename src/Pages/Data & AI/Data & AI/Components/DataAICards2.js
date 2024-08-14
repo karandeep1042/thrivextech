@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import '../../../../css/Data & AI/DataAICards2.css'
-import img1 from '../../../../Resources/Data & AI/Microsoft_logo_(2012).svg.webp'
-import img2 from '../../../../Resources/Data & AI/Google_Cloud_logo.svg.png'
-import img3 from '../../../../Resources/Data & AI/Snowflake_Logo.svg.png'
-import img4 from '../../../../Resources/Data & AI/databricks-logo.png'
-import img5 from '../../../../Resources/Data & AI/Qlik Logo No Trademark 2 Color Positive RGB.png'
-import img6 from '../../../../Resources/Data & AI/640px-Tableau_Logo.png'
-import img7 from '../../../../Resources/Data & AI/power-bi_logo.png'
-import img8 from '../../../../Resources/Data & AI/SAP_2011_logo.svg.png'
-import img9 from '../../../../Resources/Data & AI/logo-btp.png'
+import img1 from '../../../../Images/Data & AI/Trending Technologies/Microsoft_logo_(2012).svg.webp'
+import img2 from '../../../../Images/Data & AI/Trending Technologies/Google_Cloud_logo.svg.png'
+import img3 from '../../../../Images/Data & AI/Trending Technologies/Snowflake_Logo.svg.png'
+import img4 from '../../../../Images/Data & AI/Trending Technologies/databricks-logo.png'
+import img5 from '../../../../Images/Data & AI/Trending Technologies/Qlik Logo No Trademark 2 Color Positive RGB.png'
+import img6 from '../../../../Images/Data & AI/Trending Technologies/640px-Tableau_Logo.png'
+import img7 from '../../../../Images/Data & AI/Trending Technologies/power-bi_logo.png'
+import img8 from '../../../../Images/Data & AI/Trending Technologies/SAP_2011_logo.svg.png'
+import img9 from '../../../../Images/Data & AI/Trending Technologies/logo-btp.png'
 import { SlideRight, SlideLeft, SlideUp, SlideDown, FadeDown, FadeLeft, FadeRight, FadeUp, ScaleDown, ScaleUp } from '../../../Animations/Animations';
 
 export default function DataAICards2() {

@@ -4,11 +4,10 @@ import Footer from '../Home Page/Components/Footer'
 import DtsHero from './Components/DtsHero'
 import DtsInfo from './Components/DtsInfo'
 import ContactPage from '../Contact Page/ContactPage'
-import DtsHero2 from './Components/DtsHero2'
 import DtsInfo2 from './Components/DtsInfo2'
 import DtsInfo3 from './Components/DtsInfo3'
-import img1 from '../../New Resources/Digital Talent Solutions/infoimage.png'
-import img2 from '../../New Resources/Digital Talent Solutions/mainpic.jpg'
+import img1 from '../../Images/Digital Talent Solutions/infoimage.png'
+import img2 from '../../Images/Digital Talent Solutions/mainpic.jpg'
 
 export default function DigitalTalentSolutions() {
   return (

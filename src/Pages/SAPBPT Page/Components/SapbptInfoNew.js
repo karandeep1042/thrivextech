@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../../../Resources/SAP/img1.jpg'
+import img1 from '../../../Images/SAPBTP/img1.jpg'
 import { FadeIn, FadeUp, SlideRight } from '../../Animations/Animations'
 
 export default function SapbptInfoNew() {

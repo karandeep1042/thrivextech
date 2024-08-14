@@ -6,12 +6,12 @@ import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css'
 import '../../../New css/Home Page/HeroSlider.css'
 import { Link } from "react-router-dom";
-import img1 from '../../../New Resources/Home/Picture1.png'
-import img2 from '../../../New Resources/Home/Picture2.png'
-import img3 from '../../../New Resources/Home/Picture3.png'
-import img4 from '../../../New Resources/Home/Picture4.png'
-import img5 from '../../../New Resources/Home/Picture5.png'
-import img6 from '../../../New Resources/Home/Picture6.png'
+import img1 from '../../../Images/Home Page/Picture1.png'
+import img2 from '../../../Images/Home Page/Picture2.png'
+import img3 from '../../../Images/Home Page/Picture3.png'
+import img4 from '../../../Images/Home Page/Picture4.png'
+import img5 from '../../../Images/Home Page/Picture5.png'
+import img6 from '../../../Images/Home Page/Picture6.png'
 
 export default function HeroSection() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);

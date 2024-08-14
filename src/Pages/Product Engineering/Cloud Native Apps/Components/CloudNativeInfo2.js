@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../../../../New Resources/Product Engineering/Cloud Native/Picture1.png'
+import img1 from '../../../../Images/Product Engineering/Cloud Native/Picture1.png'
 import '../../../../New css/Product Engineering/Cloud Native/CloudNativeInfo2.css'
 import { FadeRight, FadeUp } from '../../../Animations/Animations'
 

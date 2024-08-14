@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../../New css/SAP S4 HANA/Sap1info2.css'
-import img5 from '../../../../New Resources/SAP S4 HANA/mainpic.png'
+import img5 from '../../../../Images/SAP S4 HANA/mainpic.png'
 import { FadeDown, FadeIn, FadeUp, SlideLeft, SlideRight } from '../../../Animations/Animations'
 
 export default function Sap1info2() {

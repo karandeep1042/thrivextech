@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from '../../../../New Resources/AI & ML/aimlinfo.png'
-import img2 from '../../../../New Resources/AI & ML/mainpic.png'
+import img1 from '../../../../Images/Data & AI/AI & ML/aimlinfo.png'
+import img2 from '../../../../Images/Data & AI/AI & ML/mainpic.png'
 import '../../../../New css/Data & AI/AI & ML/AIMLInfo.css'
 import { FadeRight, FadeUp } from '../../../Animations/Animations'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../New css/Experience Design/EDNewInfo2.css'
-import img1 from '../../../New Resources/Experience Design/info3.png'
-import img2 from '../../../New Resources/Experience Design/mainpic.jpg'
+import img1 from '../../../Images/Experience Design Page/info3.png'
+import img2 from '../../../Images/Experience Design Page/mainpic.jpg'
 import { FadeRight, FadeLeft, FadeUp, FadeDown } from '../../Animations/Animations';
 
 export default function EDNewInfo2() {

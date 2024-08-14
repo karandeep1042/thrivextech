@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
 import { SlideRight, SlideLeft, SlideUp, SlideDown, FadeDown, FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations';
 
 export default function DataEngineeringInfo2() {

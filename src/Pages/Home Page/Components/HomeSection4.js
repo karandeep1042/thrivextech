@@ -1,9 +1,9 @@
 import React from 'react'
 import '../../../css/Home Page/HomeSection4.css'
-import img1 from '../../../New Resources/Home/Sec3 logo/Picture1.png'
-import img2 from '../../../New Resources/Home/Sec3 logo/Picture2.png'
-import img3 from '../../../New Resources/Home/Sec3 logo/Picture3.png'
-import img4 from '../../../New Resources/Home/Sec3 logo/Picture4.png'
+import img1 from '../../../Images/Home Page/Sec3 logo/Picture1.png'
+import img2 from '../../../Images/Home Page/Sec3 logo/Picture2.png'
+import img3 from '../../../Images/Home Page/Sec3 logo/Picture3.png'
+import img4 from '../../../Images/Home Page/Sec3 logo/Picture4.png'
 export default function HomeSection4() {
 
     const homesection4cards = [

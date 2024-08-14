@@ -2,16 +2,13 @@ import React from 'react'
 import Navbar from '../../Home Page/Navbar'
 import Footer from '../../Home Page/Components/Footer'
 import ContactPage from '../../Contact Page/ContactPage'
-import IntegrationHero from './Components/IntegrationHero'
 import IntegrationInfo from './Components/IntegrationInfo'
-import IntegrationInfo2 from './Components/IntegrationInfo2'
 import IntegrationInfo3 from './Components/IntegrationInfo3'
 import AllEngineeringServices from '../Software Development/Components/AllEngineeringServices'
-import SWdevhead from '../Software Development/Components/SWdevhead'
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import DtsInfo from '../../Digital Talent Solutions/Components/DtsInfo';
-import img1 from '../../../New Resources/Product Engineering/Integration/info.png'
-import img2 from '../../../New Resources/Product Engineering/Integration/Picture4.jpg'
+import img1 from '../../../Images/Product Engineering/Integration/info.png'
+import img2 from '../../../Images/Product Engineering/Integration/Picture4.jpg'
 import TrendingTechnologies from '../Software Development/Components/TrendingTechnologies'
 export default function Integration() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from '../../../Resources/Career/img1.png'
-import img2 from '../../../Resources/Career/img2.png'
+import img1 from '../../../Images/Career Page/img1.png'
+import img2 from '../../../Images/Career Page/img2.png'
 import '../../../css/Career/CareerInfo.css'
 import { FadeLeft, FadeRight, FadeUp } from '../../Animations/Animations'
 

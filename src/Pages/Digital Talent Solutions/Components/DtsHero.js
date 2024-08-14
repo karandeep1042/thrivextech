@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../../css/Digital Talent Solutions/Dtshero.css'
-import img1 from '../../../Resources/dtshero.jpg'
 import { FadeUp } from '../../Animations/Animations'
 
 export default function DtsHero() {

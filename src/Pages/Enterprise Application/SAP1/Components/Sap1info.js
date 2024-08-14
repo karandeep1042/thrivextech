@@ -1,8 +1,8 @@
 import React from 'react'
-import img1 from '../../../../New Resources/SAP S4 HANA/list1.png'
-import img2 from '../../../../New Resources/SAP S4 HANA/list2.png'
-import img3 from '../../../../New Resources/SAP S4 HANA/list3.png'
-import img4 from '../../../../New Resources/SAP S4 HANA/list4.png'
+import img1 from '../../../../Images/SAP S4 HANA/list1.png'
+import img2 from '../../../../Images/SAP S4 HANA/list2.png'
+import img3 from '../../../../Images/SAP S4 HANA/list3.png'
+import img4 from '../../../../Images/SAP S4 HANA/list4.png'
 
 import '../../../../New css/SAP S4 HANA/Sap1info.css'
 import { FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations'

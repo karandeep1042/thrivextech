@@ -1,17 +1,16 @@
 import React from 'react'
 import Navbar from '../../Home Page/Navbar';
 import Footer from '../../Home Page/Components/Footer';
-import SWdevHero from './Components/SWdevHero';
 import SWdevcards from './Components/SWdevcards';
 import SWdevinfo from './Components/SWdevinfo';
-import SWdevhead from './Components/SWdevhead';
 import ContactPage from '../../Contact Page/ContactPage';
 import AllEngineeringServices from './Components/AllEngineeringServices';
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import DtsInfo from '../../Digital Talent Solutions/Components/DtsInfo';
 import TrendingTechnologies from './Components/TrendingTechnologies';
-import img1 from '../../../New Resources/Product Engineering/Software Development/info1.png'
-import img from '../../../New Resources/Product Engineering/Software Development/Picture1.png'
+import img1 from '../../../Images/Product Engineering/Software Development/info1.png'
+import img from '../../../Images/Product Engineering/Software Development/Picture1.png'
+import '../../../css/SW dev/SWdevhead.css'
 export default function SWdev() {
   return (
     <>

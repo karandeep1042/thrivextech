@@ -1,12 +1,12 @@
 import React from 'react'
 import '../../../css/Home Page/HomeSection3.css'
 import { Link } from 'react-router-dom'
-import img1 from '../../../New Resources/Home/mainpc.png'
-import img2 from '../../../New Resources/Home/Sec4logo/Picture1.png'
-import img3 from '../../../New Resources/Home/Sec4logo/Picture2.png'
-import img4 from '../../../New Resources/Home/Sec4logo/Picture3.png'
-import img5 from '../../../New Resources/Home/Sec4logo/Picture4.png'
-import img6 from '../../../New Resources/Home/Sec4logo/Picture5.png'
+import img1 from '../../../Images/Home Page/mainpc.png'
+import img2 from '../../../Images/Home Page/Sec4logo/Picture1.png'
+import img3 from '../../../Images/Home Page/Sec4logo/Picture2.png'
+import img4 from '../../../Images/Home Page/Sec4logo/Picture3.png'
+import img5 from '../../../Images/Home Page/Sec4logo/Picture4.png'
+import img6 from '../../../Images/Home Page/Sec4logo/Picture5.png'
 import { FadeIn, FadeUp, ScaleUp } from '../../Animations/Animations'
 
 export default function HomeSection3() {

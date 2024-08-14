@@ -31,7 +31,6 @@
   justify-content: center;
   opacity: 1;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-image: url("../../Resources/blob\ \(1\).svg");
   mask-size: 100% 100%;
   /* mask-position: 5vw; */
   display: flex;

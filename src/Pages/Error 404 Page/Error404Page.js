@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../../Resources/astronaut-removebg.png';
+import img1 from '../../Images/astronaut-removebg.png';
 import "../../css/Error 404 Page/Error404Page.css"
 import { Link } from 'react-router-dom';
 

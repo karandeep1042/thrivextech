@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from '../../Home Page/Navbar'
 import Footer from '../../Home Page/Components/Footer'
-import Modernizationhero from './Components/Modernizationhero'
 import Modernizationinfo from './Components/Modernizationinfo'
 import Modernizationcards from './Components/Modernizationcards'
-import SWdevhead from '../Software Development/Components/SWdevhead'
 import ContactPage from '../../Contact Page/ContactPage'
 import AllEngineeringServices from '../Software Development/Components/AllEngineeringServices'
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import DtsInfo from '../../Digital Talent Solutions/Components/DtsInfo';
-import img1 from '../../../New Resources/Product Engineering/Modernization/info1.png'
 import TrendingTechnologies from '../Software Development/Components/TrendingTechnologies'
-import img from '../../../New Resources/Product Engineering/Modernization/Picture3.jpg'
+import img1 from '../../../Images/Product Engineering/Modernization/info1.png'
+import img from '../../../Images/Product Engineering/Modernization/Picture3.jpg'
 
 export default function Modernization() {
   return (

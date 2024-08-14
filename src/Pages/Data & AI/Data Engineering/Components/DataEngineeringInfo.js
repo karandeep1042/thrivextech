@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from '../../../../New Resources/Data Engineering/lifecycle.png'
-import img2 from '../../../../New Resources/Data Engineering/Main pic.png'
+import img1 from '../../../../Images/Data & AI/Data Engineering/lifecycle.png'
+import img2 from '../../../../Images/Data & AI/Data Engineering/Main pic.png'
 import '../../../../New css/Data & AI/Data Engineering/DataEngineeringInfo.css'
 import { SlideRight, SlideLeft, SlideUp, SlideDown, FadeDown, FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations';
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img1 from '../../../Resources/About page/img2.png'
+import img1 from '../../../Images/About Page/img2.png'
 import { FadeUp } from '../../Animations/Animations'
 
 export default function AboutInfo2() {
