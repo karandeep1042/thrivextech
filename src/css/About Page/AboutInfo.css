@@ -55,12 +55,32 @@
     font-weight: bolder;
 }
 
-.aboutinfolistdescriptionboldwords{
+.aboutinfolistdescriptionboldwords {
     font-weight: 600;
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 600px) {
     .aboutinfolist {
         padding: 0vh 5vw;
+    }
+
+    .aboutinfonewlist{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .aboutinfolistheader i {
+        font-size: 2rem;
+    }
+
+    .aboutinfolistheader p {
+        padding: 8px 10px;
+        width: 100%;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+
+    .aboutinfolistdescription {
+        font-size: 1.1rem;
     }
 }

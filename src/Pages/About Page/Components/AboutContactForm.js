@@ -332,6 +332,7 @@ export default function AboutContactForm() {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }

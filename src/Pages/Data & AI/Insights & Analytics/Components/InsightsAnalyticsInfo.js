@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../../../New css/Data & AI/Insights & Analytics/InsightsAnalyticsInfo.css'
 import img1 from '../../../../New Resources/Insights & Analytics/info.png'
+import img2 from '../../../../New Resources/Insights & Analytics/mainpic.png'
+import { FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations'
 
 export default function InsightsAnalyticsInfo() {
 
@@ -25,31 +27,28 @@ export default function InsightsAnalyticsInfo() {
 
     return (
         <>
-            <div className="insightsanalyticsinfomaincontainer">
-                <div className="insightsanalyticsinfochildcontainer">
-                    <div className="insightsanalyticsinfodiv1">
-                        <div className="insightsanalyticsinfoheader">
-                            <p>Our Approach to Insights & Analytics</p>
-                        </div>
-                        <div className="insightsanalyticsinfodescription">
-                            <p>With the right business intelligence tools, we empower you to delve deep into consumer behavior, driving profitability, sustainability, and transformative change throughout your organization. We collaborate closely with you to implement intelligent solutions that revolutionize your business operations, both internally and externally. This translates into enhanced agility and decision-making through actionable business insights that inform present strategies and propel your business towards future success.</p>
-                        </div>
+            <div className="dataenginfomaincontainer">
+                <div className="dataenginfochildcontainer">
+                    <FadeUp>
+                        <img src={img2} alt="" className='dataenginfomainpic' />
+                    </FadeUp>
+                    <div className="dataenginfodiv1">
+                        <FadeUp>
+                            <div className="dataenginfomainheader">
+                                <p>Our Approach to Insights & Analytics</p>
+                            </div>
+                        </FadeUp>
+                        <FadeUp>
+                            <div className="insightsanalyticsinfodescription">
+                                <p>With the right business intelligence tools, we empower you to delve deep into consumer behavior, driving profitability, sustainability, and transformative change throughout your organization. We collaborate closely with you to implement intelligent solutions that revolutionize your business operations, both internally and externally. This translates into enhanced agility and decision-making through actionable business insights that inform present strategies and propel your business towards future success.</p>
+                            </div>
+                        </FadeUp>
                     </div>
-                    <div className="insightsanalyticsinfodiv2">
-                        <img src={img1} alt="" />
-                        {/* <div className="insightsanalyticsinfolists">
-                            {infodata.map((item, index) => (
-                                <div className="insightsanalyticsinfolist">
-                                    <div className="insightsanalyticsinfolistheader">
-                                        <p>{item.header}</p>
-                                    </div>
-                                    <div className="insightsanalyticsinfolistdescription">
-                                        <p>{item.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div> */}
-                    </div>
+                    <FadeUp>
+                        <div className="dataenginfodiv2">
+                            <img src={img1} alt="" />
+                        </div>
+                    </FadeUp>
                 </div>
             </div>
         </>

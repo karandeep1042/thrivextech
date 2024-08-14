@@ -1,23 +1,33 @@
 import React from 'react'
-import img1 from '../../../New Resources/Digital Talent Solutions/infoimage.png'
+import img1 from '../../../Resources/DTS/img1.png'
 import '../../../css/Digital Talent Solutions/DtsInfo.css'
+import { FadeLeft, FadeRight, FadeUp } from '../../Animations/Animations'
 
 export default function DtsInfo(props) {
     return (
         <>
-            <div className="aimlinfomaincontainer">
-                <div className="aimlinfochildcontainer">
-                    <div className="aimlinfodiv1">
-                        <div className="aimlinfoheader">
-                            <p>{props.header}</p>
-                        </div>
-                        <div className="aimlinfodescription">
-                            <p>{props.desc}</p>
-                        </div>
+            <div className="dataenginfomaincontainer">
+                <div className="dataenginfochildcontainer">
+                    <FadeUp>
+                        <img src={props.img2} alt="" className='dataenginfomainpic' />
+                    </FadeUp>
+                    <div className="dataenginfodiv1">
+                        <FadeUp>
+                            <div className="dataenginfomainheader">
+                                <p>{props.header}</p>
+                            </div>
+                        </FadeUp>
+                        <FadeUp>
+                            <div className="insightsanalyticsinfodescription">
+                                <p>{props.desc}</p>
+                            </div>
+                        </FadeUp>
                     </div>
-                    <div className="aimlinfodiv2">
-                        <img src={props.img} alt="" />
-                    </div>
+                    <FadeUp>
+                        <div className="dataenginfodiv2">
+                            <img src={props.img} alt="" />
+                        </div>
+                    </FadeUp>
                 </div>
             </div>
         </>

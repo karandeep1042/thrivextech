@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../Home Page/Components/Navbar'
+import Navbar from '../../Home Page/Navbar'
 import Footer from '../../Home Page/Components/Footer'
 import InsightsAnalyticsCards from './Components/InsightsAnalyticsCards'
 import DataAICards2 from '../Data & AI/Components/DataAICards2'

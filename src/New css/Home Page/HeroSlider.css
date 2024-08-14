@@ -1,0 +1,120 @@
+.homeheromaincontainer {
+    background-color: #191A1A;
+    /* background-image: linear-gradient(180deg, #e1f5fe 0%, #ffffff 100%); */
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+    margin-top: 10vh;
+}
+
+.awssld__bullets button {
+    height: 2px;
+    width: 80px;
+    border-radius: 0;
+    background: #FFFFFF;
+}
+
+.awssld__bullets {
+    width: auto;
+    gap: 2vw;
+    bottom: 5vh;
+    left: 5vw;
+    z-index: 3;
+}
+
+.awssld__bullets .awssld__bullets--active {
+    transform: none;
+    background: #01C5FD;
+}
+
+.homeslidermaincontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.homeslidermaincontainer img {
+    position: absolute;
+}
+
+.homeslidercontent {
+    position: relative;
+    left: 5vw;
+    top: 30%;
+    z-index: 10;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.homesliderhead {
+    font-size: 3rem;
+    color: white;
+}
+
+.homeslidersubhead {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.homesliderbtn {
+    display: flex;
+    align-items: center;
+}
+
+.homesliderbtn a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border: 2px solid #00bbff;
+    color: #00bbff;
+    font-size: 1.8rem;
+    background: -webkit-linear-gradient(0deg, transparent 50%, #00bbff 50%);
+    position: relative;
+    background-size: 200% 100%;
+    transition: .4s;
+}
+
+.homesliderbtn a:hover {
+    background-position: -100% 0;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeheromaincontainer {
+        /* display: none; */
+        height: 40vh;
+        margin-top: 9vh;
+        
+    }
+    .homeslidermaincontainer img {
+        height: 100%;
+    }
+
+    .homeslidercontent{
+        top: 10%;
+        width: 80%;
+        height: 100%;
+        gap: 3vh;
+    }
+
+    .homesliderhead{
+        font-size: 1.6rem;
+    }
+
+    .homeslidersubhead{
+        font-size: 1rem;
+    }
+
+    .homesliderbtn a{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .awssld__bullets{
+        /* border: 1px solid red; */
+        bottom: 2vh;
+        width: 75%;
+    }
+}

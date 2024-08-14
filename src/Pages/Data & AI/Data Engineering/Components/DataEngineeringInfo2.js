@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../../../../Resources/dtshero.jpg'
+import { SlideRight, SlideLeft, SlideUp, SlideDown, FadeDown, FadeLeft, FadeRight, FadeUp } from '../../../Animations/Animations';
 
 export default function DataEngineeringInfo2() {
 
@@ -30,24 +31,28 @@ export default function DataEngineeringInfo2() {
         <>
             <div className="ednewinfo3maincontainer">
                 <div className="ednewinfo3childcontainer">
-                    <div className="edinfo3header">
-                        <p>
-                            Unlock the Power of Your Data with Enhanced Reliability, Insights, and Security
-                        </p>
-                    </div>
+                    <FadeUp>
+                        <div className="edinfo3header">
+                            <p>
+                                Unlock the Power of Your Data with Enhanced Reliability, Insights, and Security
+                            </p>
+                        </div>
+                    </FadeUp>
                     <div className="edinfo3lists">
                         {activitiesdata.map((item, index) => (
-                            <div className="edinfo3list edinfo3listtype2">
-                                <i className="fa-regular fa-circle-check"></i>
-                                <div className="edinfo3listchildcontainer">
-                                    <div className="edinfo3listheader">
-                                        <p>{item.header}</p>
-                                    </div>
-                                    {/* <div className="edinfo3listdescription">
+                            <FadeUp>
+                                <div className="edinfo3list edinfo3listtype2">
+                                    <i className="fa-regular fa-circle-check"></i>
+                                    <div className="edinfo3listchildcontainer">
+                                        <div className="edinfo3listheader">
+                                            <p>{item.header}</p>
+                                        </div>
+                                        {/* <div className="edinfo3listdescription">
                                         <p>{item.description}</p>
-                                    </div> */}
+                                        </div> */}
+                                    </div>
                                 </div>
-                            </div>
+                            </FadeUp>
                         ))}
                     </div>
                 </div>

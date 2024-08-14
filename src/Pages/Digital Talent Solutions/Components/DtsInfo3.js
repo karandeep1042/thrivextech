@@ -1,4 +1,5 @@
 import React from 'react'
+import { FadeUp } from '../../Animations/Animations'
 
 export default function DtsInfo3() {
     const activitiesdata = [
@@ -28,21 +29,25 @@ export default function DtsInfo3() {
         <>
             <div className="ednewinfo3maincontainer">
                 <div className="ednewinfo3childcontainer">
-                    <div className="edinfo3header">
-                        <p>
-                            Unlock Benefits with Our Talent Solutions
-                        </p>
-                    </div>
+                    <FadeUp>
+                        <div className="edinfo3header">
+                            <p>
+                                Unlock Benefits with Our Talent Solutions
+                            </p>
+                        </div>
+                    </FadeUp>
                     <div className="edinfo3lists">
                         {activitiesdata.map((item, index) => (
-                            <div className="edinfo3list edinfo3listtype2">
-                                <i className="fa-regular fa-circle-check"></i>
-                                <div className="edinfo3listchildcontainer">
-                                    <div className="edinfo3listdescription">
-                                        <p><b>{item.header}</b>{item.description}</p>
+                            <FadeUp>
+                                <div className="edinfo3list edinfo3listtype2">
+                                    <i className="fa-regular fa-circle-check"></i>
+                                    <div className="edinfo3listchildcontainer">
+                                        <div className="edinfo3listdescription">
+                                            <p><b>{item.header}</b>{item.description}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </FadeUp>
                         ))}
                     </div>
                 </div>

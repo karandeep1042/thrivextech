@@ -2,7 +2,7 @@
     border-radius: 10px;
     background-color: #01C5FD;
     color: white;
-    height: 30vh;
+    /* height: 30vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,8 +11,9 @@
 .slidercardsection1 {
     padding: 20px 10px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 2vw;
+    /* gap: 2vw; */
 }
 
 .slidercardsection2 {
@@ -24,18 +25,20 @@
 }
 
 .slidercardlogo {
-    width: 30%;
+    /* margin-left: 20px; */
+    width: 20%;
     display: flex;
     justify-content: center;
 }
 
 .slidercardheader {
-    font-size: 2rem;
+    width: 60%;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .slidercardlogo img {
-    width: 80%;
+    width: 100%;
     /* heig/ht: 13vh; */
 }
 
@@ -48,13 +51,14 @@
 
 .slider-buttons {
     display: flex;
-    gap: 8vw;
+    gap: 12vw;
     justify-content: center;
     color: #01C5FD;
-    margin: 2vh 0;
+    margin: 5vh 0;
 }
 
 .slider-buttons i {
+    z-index: 3;
     font-size: 2.5rem;
     border-radius: 50%;
     border: 2px solid #01C5FD;
@@ -67,7 +71,7 @@
     transform: scale(1.02);
 }
 
-.slick-slide .slidercard{
+.slick-slide .slidercard {
     transform: scale(0.9);
     background-color: rgb(117, 117, 117);
 }
@@ -81,21 +85,84 @@
     transform: scale(1);
 }
 
-#decard{
-    height: 60vh;
+/* #decard {
+    height: 68vh;
 }
 
-#s4hanacard{
+#s4hanacard {
     height: 66vh;
 }
-#qlikcard{
-    height: 43vh;
+
+#qlikcard {
+    height: 45vh;
 }
 
-#insightanalyticscard{
+#insightanalyticscard {
     height: 55vh;
 }
 
-#swdevcard{
+#swdevcard {
     height: 50vh;
+} */
+
+.slick-dots {
+    /* z-index: 4; */
+    bottom: -9.5vh;
+    padding-top: 50px;
+}
+
+.slider-container {
+    width: 65vw;
+    margin: 8vh auto;
+}
+
+.slick-slider{
+    margin-top: 2vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .slidercard{
+        height: 35vh;
+    }
+
+    .slider-container {
+        width: 80vw;
+    }
+
+    .slider-buttons {
+        gap: 30vw;
+    }
+
+    .slider-buttons i { 
+        font-size: 2rem;
+    }
+
+    .slick-dots {
+        bottom: -4vh;
+    }
+
+    .slidercardheader {
+        font-size: 1.1rem;
+    }
+
+    .slidercarddesc {
+        font-size: 1.1rem;
+    }
+
+    #decard{
+        height: 72vh;
+    }
+
+    #insightanalyticscard{
+        height: 65vh;
+    }
+
+    #s4hanacard{
+        height: 79vh;
+    }
+
+    #qlikcard{
+        height: 50vh;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../../../../Resources/dtshero.jpg'
+import { FadeUp } from '../../../Animations/Animations'
 
 export default function IntegrationInfo3() {
     const activitiesdata = [
@@ -29,28 +30,32 @@ export default function IntegrationInfo3() {
         <>
             <div className="ednewinfo3maincontainer">
                 <div className="ednewinfo3childcontainer">
-                    <div className="edinfo3header">
-                        <p>
-                            Business Benefits with Integration Services
-                        </p>
-                    </div>
+                    <FadeUp>
+                        <div className="edinfo3header">
+                            <p>
+                                Business Benefits with Integration Services
+                            </p>
+                        </div>
+                    </FadeUp>
                     <div className="edinfo3lists">
                         {activitiesdata.map((item, index) => (
-                            <div className="edinfo3list edinfo3listtype2">
-                                <i className="fa-regular fa-circle-check"></i>
-                                <div className="edinfo3listchildcontainer">
-                                    <div className="edinfo3listheader">
-                                        <p>{item.header}</p>
-                                    </div>
-                                    <div className="edinfo3listdescription">
-                                        <p>{item.description}</p>
+                            <FadeUp>
+                                <div className="edinfo3list edinfo3listtype2">
+                                    <i className="fa-regular fa-circle-check"></i>
+                                    <div className="edinfo3listchildcontainer">
+                                        <div className="edinfo3listheader">
+                                            <p>{item.header}</p>
+                                        </div>
+                                        <div className="edinfo3listdescription">
+                                            <p>{item.description}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </FadeUp>
                         ))}
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

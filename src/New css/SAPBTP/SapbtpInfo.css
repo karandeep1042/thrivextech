@@ -29,7 +29,7 @@
     margin-top: 4vh;
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    /* gap: 3vh; */
 }
 
 .sapbtpinfolist {
@@ -43,20 +43,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 15vw;
     background-color: #0eaae3;
     color: white;
-    font-weight: 600;
-    font-size: 1.6rem;
+    /* font-weight: 600; */
+    font-size: 1.3rem;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.sapbtpinfolistdiv1 p {
+    width: 80%;
 }
 
 .sapbtpinfolistdiv2 {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    background-color: #F2F2F2;
     width: 50vw;
     padding: 1vh 1vw;
     font-size: 1.1rem;

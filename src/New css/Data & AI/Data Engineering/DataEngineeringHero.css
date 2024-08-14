@@ -1,20 +1,20 @@
-.dataengheromaincontainer{
+.dataengheromaincontainer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin: 8vh 0;    
-    margin-top: 15vh;
+    margin: 8vh 0;
+    margin-top: 10vh;
 }
 
-.dataengherodiv1childcontainer{
+.dataengherodiv1childcontainer {
     width: 70vw;
     margin: auto;
     display: flex;
-    gap: 2vh;
+    /* gap: 2vh; */
     flex-direction: column;
 }
 
-.dataengherodiv1{
+.dataengherodiv1 {
     width: 100%;
     background-image: url('../../../New Resources/Universal/heroImage.png');
     height: 35vh;
@@ -22,28 +22,28 @@
     align-items: center;
 }
 
-.dataengheromainheader{
+.dataengheromainheader {
     display: flex;
 }
 
-.dataengheromainheader p{
+.dataengheromainheader p {
     font-size: 3rem;
     font-weight: 600;
-    padding: 15px 35px;
-    border: 2px solid white;
+    padding: 15px 0px;
+    /* border: 2px solid white; */
     color: white;
 }
 
-.dataengheromainsubheader{
-    width: 55%;
+.dataengheromainsubheader {
+    width: 75%;
 }
 
-.dataengheromainsubheader p{
+.dataengheromainsubheader p {
     color: white;
     font-size: 1.6rem;
 }
 
-.dataengherodiv2{
+.dataengherodiv2 {
     width: 65vw;
     font-size: 1.6rem;
     margin: 8vh auto;
@@ -53,20 +53,68 @@
     align-items: center;
 }
 
-.dataengherolistheader{
+.dataengherolistheader {
     font-size: 1.6rem;
     font-weight: 600;
     color: #0eaae3;
 }
 
-.dataengherolistdescription{
+.dataengherolistdescription {
     margin-top: 2vh;
     font-size: 1.6rem;
     color: rgb(117, 117, 117);
 }
 
-.dataengherolists{
+.dataengherolists {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+    /* gap: 4vh; */
+}
+
+.dataengheromaindesc{
+    color: rgb(117, 117, 117);
+}
+
+.dataenginfomaindesc ul {
+    margin-left: 1.3vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .dataengheromainheader p {
+        font-size: 1.5rem;
+    }
+
+    .dataengheromaincontainer{
+        margin-top: 9vh;
+    }
+
+    .dataengherodiv1childcontainer {
+        width: 80vw;
+        gap: 3vh;
+    }
+
+    .dataengheromainsubheader {
+        width: 100%;
+    }
+
+    .dataengheromainsubheader p {
+        font-size: 1.1rem;
+    }
+
+    .dataengherodiv2 {
+        width: 80vw;
+        font-size: 1.1rem;
+    }
+
+    .dataengherolists {
+        gap: 1vh;
+    }
+
+    .dataengherolistheader {
+        margin-top: 4vh;
+    }
+
+    .dataenginfomaindesc ul {
+        margin-left: 5vw;
+    }
 }

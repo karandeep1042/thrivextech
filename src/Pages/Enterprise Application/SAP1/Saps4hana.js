@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../Home Page/Components/Navbar'
+import Navbar from '../../Home Page/Navbar'
 import Footer from '../../Home Page/Components/Footer'
 import Sap1hero from './Components/Sap1hero'
 import Sap1hanacards from './Components/Sap1hanacards'

@@ -1,15 +1,14 @@
 .homepagesection3maincontainer {
-    width: 80vw;
-    margin: 0 auto;
-    margin-top: 2vh;
+    width: 65vw;
+    margin: 12vh auto;
 }
 
 .homepagesection3maindescription {
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .homepagesection3mainheader p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* font-weight: 600; */
     color: #0eaae3;
 }
@@ -21,7 +20,7 @@
 }
 
 .homesection3cards {
-    margin-top: 7vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 15vh;
@@ -58,9 +57,9 @@
 }
 
 .homesection3cardsubcard {
-    box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
+    border: 1px solid rgb(167, 167, 167);
     border-radius: 5px;
-    width: 700px;
+    width: 45%;
     padding: 20px;
     margin-bottom: 3vh;
     cursor: pointer;
@@ -71,20 +70,20 @@
 .homesection3cardsubcard2 {
     color: black;
     text-decoration: none;
-    box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
+    border: 1px solid rgb(167, 167, 167);
     border-radius: 5px;
-    width: 700px;
+    width: 45%;
     padding: 20px;
     margin-bottom: 3vh;
     cursor: pointer;
 }
 
-.homesection3cardsubcard:hover .homesection3cardsubcardheader p:after{
-        width: 100%;
+.homesection3cardsubcard:hover .homesection3cardsubcardheader p:after {
+    width: 100%;
 }
 
-.homesection3cardsubcardheader{
-    display:flex ;
+.homesection3cardsubcardheader {
+    display: flex;
 }
 
 .homesection3cardsubcardheader p {
@@ -107,4 +106,64 @@
 .homesection3cardsubcarddescription p {
     font-size: 1.35rem;
     color: #595959;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .homepagesection3maincontainer{
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .homepagesection3mainheader p {
+        font-size: 1.8rem;
+    }
+
+    .homepagesection3maindescription p {
+        font-size: 1.3rem;
+    }
+
+    .homepagesection2whowearebtn{
+        font-size: 1rem;    
+    }
+
+    .homesection3cardheader p {
+        font-size: 1.3rem;
+        margin-left: 4vw;
+    }
+
+    .homesection3carddescription {
+        margin-top: 2vh;
+    }
+
+    .homesection3carddescription p {
+        font-size: 1.1rem;
+    }
+
+    .homesection3cardsubcards {
+        margin-top: 4vh;
+    }
+
+    .homesection3cardsubcardheader p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: rgb(117, 117, 117);
+    }
+
+    .homesection3cardsubcarddescription {
+        margin-top: 4vh;
+    }
+    
+    .homesection3cardsubcarddescription p {
+        font-size: 1.1rem;
+    }
+
+    .homesection3cards{
+        gap: 12vh;
+    }
+    
+    .homesection3cardsubcard2,.homesection3cardsubcard{
+        width: 100%;
+    }
+
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import ViewBlogHero from "./Components/ViewBlogHero";
-import Navbar from "../Home Page/Components/Navbar";
+import Navbar from "../Home Page/Navbar";
 import Footer from "../Home Page/Components/Footer";
 import ViewBlogContent from "./Components/ViewBlogContent";
 import ShareBlog from "./Components/ShareBlog";

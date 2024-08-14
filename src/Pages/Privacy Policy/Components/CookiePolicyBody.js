@@ -3,7 +3,7 @@ import React from 'react'
 export default function CookiePolicyBody() {
     return (
         <>
-            <div className="privacypolicybodymaincontainer" style={{paddingTop:'8vh'}}>
+            <div className="privacypolicybodymaincontainer" style={{ paddingTop: '8vh' }}>
                 <div className="cookiepolicybodymainheader">
                     <p>
                         Cookie Policy
@@ -44,6 +44,24 @@ export default function CookiePolicyBody() {
                     Thrivex Technologies sets cookies that are technical and necessary for the function of the website, for example, that allow you to browse the website and use the different options included in this for the management of the website and enable its functions and services, such as controlling data traffic and communication, identifying the session, managing payment, controlling any fraud linked to service security, completing event sign-up or participation requests, counting visits for the purposes of invoicing the licenses for the software which allow the service to operate (website, platform, or application), using safety elements during browsing, storing contents for video or audio broadcasting, enabling dynamic contents (for example, loading animation for a text or image), or sharing contents on social media. <br /><br />
                     Some of the cookies we commonly use are listed below. This list is not exhaustive, but it is intended to illustrate the main reasons we typically set cookies. If you visit one of our websites, the site may set some or all of the following cookies:  <br /><br />
                     A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your device in order to remember information about you, such as your language preference or login information. Those cookies are set by us and called first-party cookies. We also use third-party cookies – which are cookies from a domain different from the domain of the website you are visiting – for our advertising and marketing efforts. <br /><br />
+                    <br /><br />
+                    <table>
+                        <tr>
+                            <th>Third Party Companies</th>
+                            <th>Purpose</th>
+                            <th>Applicable Privacy/Cookie Policy Link</th>
+                        </tr>
+                        <tr>
+                            <td style={{ width: '10vw' }}>Google</td>
+                            <td style={{ width: '20vw' }}>Show targeted, relevant advertisements and re-targeted advertisements to visitors of Thrivex Technologies websites</td>
+                            <td style={{ width: '30vw' }}>
+                                <br /><p>Google Privacy Policy: <a href='https://policies.google.com/privacy'>https://policies.google.com/privacy</a></p><br />
+                                <p>Opt Out: <a href="https://adssettings.google.com/">https://adssettings.google.com/</a></p><br />
+                                <p>NAI: <a href="http://optout.networkadvertising.org/">http://optout.networkadvertising.org/</a></p><br />
+                                <p>DAA: <a href="http://optout.aboutads.info/">http://optout.aboutads.info/</a></p><br />
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div className="privacypolicybodyinfo">
                     <br /><br /><br /><span>Customize Cookies</span> <br /><br />
@@ -87,7 +105,13 @@ export default function CookiePolicyBody() {
                 </div>
                 <div className="privacypolicybodyinfo">
                     <br /><br /><br /><span>Safari:</span> <br /><br />
-                    Open Safari → Click on Preferences from the Safari menu → Go to Privacy tab → Click on “Remove all Website data” to remove all the stored data → Click Remove now button from the pop-up → Click on Details button under “Remove all Website data” → Select the sites you want to remove the data from → Click Remove → Click Done. <br /><br />
+                    Open Safari → Click on Preferences from the Safari menu → Go to Privacy tab → Click on “Remove all Website data” to remove all the stored data → Click Remove now button from the pop-up → Click on Details button under “Remove all Website data” → Select the sites you want to remove the data from → Click Remove → Click Done. <br /><br /><br />
+                    To find information relating to other browsers, visit the browser developer’s website.
+                </div><br /><br />
+                <div className="privacypolicybodyinfo">
+                    {/* <br /><br /><br /><span>Safari:</span> <br /><br /> */}
+                    <p style={{fontSize:'1rem',textAlign:'end',color:'#0eaae3'}}>This policy was last updated on 15th Aug, 2024</p>
+                    <br />
                 </div>
             </div>
         </>

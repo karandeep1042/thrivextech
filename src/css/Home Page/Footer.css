@@ -66,7 +66,7 @@
 }
 
 .footersection2header {
-  color: #0eaae3;
+  color: white;
 }
 
 .footersection2links {
@@ -81,7 +81,8 @@
 }
 
 .footersection2links a {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  transition: .3s;
   display: flex;
   color: white;
   text-decoration: none;
@@ -130,7 +131,7 @@
 }
 
 .fs3itemsec2 p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: white;
   font-weight: 500;
 }
@@ -205,7 +206,7 @@
 
 .footersection2linksheader {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .footersection2linksinfo {
@@ -217,10 +218,6 @@
   gap: 2vh;
 }
 
-.footersection2links a {
-  /* font-size: 1.3rem; */
-  transition: .2s;
-}
 
 .footersection2links a:hover {
   color: #01c6fd;
@@ -243,46 +240,71 @@
   border-bottom: 1px solid white;
 }
 
-@media only screen and (max-width : 480px) {
-  .footermaincontainer {
-    flex-wrap: wrap;
-    padding: 5vh 5vw;
-    gap: 5vh;
+@media only screen and (max-width : 600px) {
+  .footerchildcontainer{
+    width: 80vw;
+    flex-direction: column;
   }
 
-  .footerlogo {
-    width: 50%;
-  }
-
-  .footersection1 {
+  .footersection2{
     width: 100%;
-    gap: 2vh;
+  }
+  
+  .footersection2header{
+    font-size: 1.5rem;
   }
 
-  .footersocialmediaicons {
-    gap: 15px;
+  .footersection2links{
+    justify-content: space-between;
   }
 
-  .footersection2 {
-    padding-left: 0vw;
+  .footersection2links a{
+    font-size: 1.1rem;
+  }
+
+  .footersection2linksheader{
+    font-size: 1.1rem;
+  }
+
+  .footersection2linkschildcontainer{
+    margin-bottom: 4vh;
+  }
+
+  .footersection2linksinfo{
+    gap: 1vh;
+    margin-left: 0;
+  }
+
+  .footersection3{
+    margin-top: 6vh;
     width: 100%;
+  }
+
+  .fs3header{
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .fs3items{
     gap: 3vh;
   }
 
-  .footersection2links {
-    gap: 2vh;
+  .fs3item{
+    /* justify-content: space-between; */
+    align-items: center;
   }
 
-  .footersection2links a {
+  .fs3itemsec1{
+    margin-right: 4vw;
+  }
+
+  .fs3itemsec2 p{
+    font-size: 1.1rem;
+  }
+
+  .footersection4{
+    margin-top: 6vh;
+    width: 100%;
     font-size: .9rem;
-  }
-
-  .footersection3 {
-    width: 100%;
-    gap: 3vh;
-  }
-
-  .fs3items {
-    gap: 3vh;
   }
 }

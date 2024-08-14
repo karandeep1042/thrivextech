@@ -17,6 +17,7 @@
 .dtsinfo2description {
     margin-top: 4vh;
     font-size: 1.6rem;
+    color: rgb(117, 117, 117);
 }
 
 .dtsinfo2description ul {
@@ -25,4 +26,8 @@
 
 .dtsinfo2description ul li::marker {
     color: #0eaae3;
+}
+
+@media only screen and (max-width: 600px) {
+    
 }

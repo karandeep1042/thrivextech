@@ -1,19 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import img1 from '../../../Resources/About page/img2.png'
+import { FadeUp } from '../../Animations/Animations'
 
 export default function AboutInfo2() {
     return (
         <>
-            <div className="careerinfomaincontainer">
-                <div className="careerinfochildcontainer">
+            <div className="dataenginfomaincontainer">
+                <div className="dataenginfochildcontainer">
                     <div className="careerinfodiv1">
-                        <div className="careerinfoheader">
+                        <FadeUp>
+                            <img src={img1} alt="" className='dataenginfomainpic' />
+                        </FadeUp>
+                        <div className="dataenginfomainheader">
                             <p>Our Values</p>
                         </div>
-                        <div className="careerinfodesc">
+                        <div className="dataenginfomaindesc">
                             <p>At Thrivex, We foster a vibrant and inclusive company culture that empowers our team members to thrive, innovate, and deliver exceptional results. Our culture is built on the following key values</p>
                         </div>
                     </div>
+
                     <div className="careerinfodiv1">
                         <div className="aboutinfolists">
                             <div className="aboutinfonewlist">
@@ -31,7 +37,7 @@ export default function AboutInfo2() {
                                     <p>Agile</p>
                                 </div>
                                 <div className="aboutinfolistdescription">
-                                    We move with <span className="aboutinfolistdescriptionboldwords">agility</span>, building solutions quickly and <span className="aboutinfolistdescriptionboldwords">learning</span> even faster from setbacks. We're <span className="aboutinfolistdescriptionboldwords">obsessed with impact</span>, elivering <span className="aboutinfolistdescriptionboldwords">tangible results</span> that <span className="aboutinfolistdescriptionboldwords">exceed expectations.</span>
+                                    We move with <span className="aboutinfolistdescriptionboldwords">agility</span>, building solutions quickly and <span className="aboutinfolistdescriptionboldwords">learning</span> even faster from setbacks. We're <span className="aboutinfolistdescriptionboldwords">obsessed with impact</span>, delivering <span className="aboutinfolistdescriptionboldwords">tangible results</span> that <span className="aboutinfolistdescriptionboldwords">exceed expectations.</span>
                                 </div>
                             </div>
                             <div className="aboutinfonewlist">
@@ -40,25 +46,27 @@ export default function AboutInfo2() {
                                     <p>Human</p>
                                 </div>
                                 <div className="aboutinfolistdescription">
-                                    We believe in the power of <span className="aboutinfolistdescriptionboldwords">collaboration</span> and <span className="aboutinfolistdescriptionboldwords">empathy</span>. We foster a <span className="aboutinfolistdescriptionboldwords">supportive</span> environment where <span className="aboutinfolistdescriptionboldwords">everyone feels valued</span> and their <span className="aboutinfolistdescriptionboldwords">curiosity is encouraged</span>. We treat each other <span className="aboutinfolistdescriptionboldwords">respect</span> and strive to build a <span className="aboutinfolistdescriptionboldwords">positive tech ecosystem.</span>
+                                    We believe in the power of <span className="aboutinfolistdescriptionboldwords">collaboration</span> and <span className="aboutinfolistdescriptionboldwords">empathy</span>. We foster a <span className="aboutinfolistdescriptionboldwords">supportive</span> environment where <span className="aboutinfolistdescriptionboldwords">everyone feels valued</span> and their <span className="aboutinfolistdescriptionboldwords">curiosity is encouraged</span>. We treat each other with <span className="aboutinfolistdescriptionboldwords">respect</span> and strive to build a <span className="aboutinfolistdescriptionboldwords">positive tech ecosystem.</span>
                                 </div>
                             </div>
-                            <div className="careerinfodesc">
+                            <div className="dataenginfomaindesc">
                                 <p>
                                     Our dedication to our core values serves as the foundation for our unique culture, which prioritizes our customers.
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {/* <FadeUp> */}
                     <div className="careerinfodiv1">
-                        <div className="careerinfoheader">
-                            <p>Join our Team</p>
+                        <div className="dataenginfomainheader">
+                            <p>Join our Team!</p>
                         </div>
-                        <div className="careerinfodesc">
+                        <div className="dataenginfomaindesc">
                             <p>Are you passionate about technology and making a difference? We're always looking for talented individuals to join our team. <br /><br />
                                 Visit our <Link to='/career' style={{ color: '#0eaae3' }}>Careers</Link> Page to learn more about our open positions.</p>
                         </div>
                     </div>
+                    {/* </FadeUp> */}
 
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import '../../../New css/Experience Design/EDqanda.css'
+import { FadeRight, FadeLeft, FadeUp, FadeDown, SlideUp } from '../../Animations/Animations';
+import '../../../New css/Experience Design/EDFAQ.css'
 
 export default function EDqanda() {
 
@@ -25,8 +26,8 @@ export default function EDqanda() {
             answer: "A design system is a collection of reusable components, guidelines, and standards that ensure consistency across a product's interface. It is important because it helps maintain a cohesive look and feel, improves efficiency by streamlining the design and development process, and ensures that the user experience is uniform and predictable across different platforms and touchpoints."
         },
         {
-            question: "6.	How is THRIVEX's experience design process different?",
-            answer: 'THRIVEX takes a design-first approach, prioritizing user-centric solutions and leveraging our expertise to craft seamless customer journeys. This holistic approach delivers customized, engaging experiences that drive business results and build loyalty.'
+            question: "6.	How is Thrivex's experience design process different?",
+            answer: 'Thrivex takes a design-first approach, prioritizing user-centric solutions and leveraging our expertise to craft seamless customer journeys. This holistic approach delivers customized, engaging experiences that drive business results and build loyalty.'
         },
         {
             question: '7.	How does user research contribute to experience design?',
@@ -35,39 +36,45 @@ export default function EDqanda() {
     ]
 
     const toggleAccordion = (e) => {
-        let panel = e.target.nextElementSibling;
-        if (panel.style.display == "none") {
-            panel.style.display = "block";
+        const faqs = document.querySelectorAll('.accordionicon');
+        const faqsans = document.querySelectorAll('.edqandaanswer');
+        console.log(e);
+
+        faqsans[e].classList.toggle("edqandaansweractive");
+        faqs[e].classList.toggle("accordioniconrotate");
+        if (!faqs[e].className.includes("edqandaansweractive")) {
+            faqs[e].classList.add("edqandaansweractive");
+            console.log(faqs[e].style.transform = "rotate(180deg");
         } else {
-            console.log("ontrol");
-            panel.style.display = "none";
+            faqs[e].classList.remove("edqandaansweractive");
+            console.log(faqs[e].style.transform = "rotate(0deg");
         }
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-        // console.log(e);
     }
 
     return (
         <>
-            <div className="edqandamaincontainer">
-                <div className="eqandmainheader">
-                    Got questions? We’ve got answers!
-                </div>
-                <div className="edqandachildcontainer">
-                    {qandainfo.map((item, index) => (
-                        <div className="edqandacontainer"  >
-                            <div className="edqandaquestion" onClick={(e) => { toggleAccordion(e) }}>
-                                <p>{item.question}</p>
-                                <i className="fa-solid fa-angle-down"></i>
-                            </div>
-                            <div className="edqandaanswer">
-                                {item.answer}
-                            </div>
+            <div className="dataenginfomaincontainer">
+                <div className="dataenginfochildcontainer">
+                    <SlideUp>
+                        <div className="dataenginfomainheader">
+                            Got questions? We’ve got answers!
                         </div>
-                    ))}
+                    </SlideUp>
+                    <div className="edqandachildcontainer">
+                        {qandainfo.map((item, index) => (
+                            <SlideUp>
+                                <div className="edqandacontainer" onClick={() => { toggleAccordion(index) }} >
+                                    <div className="edqandaquestion" >
+                                        <p>{item.question}</p>
+                                        <i className="fa-solid fa-angle-down accordionicon"></i>
+                                    </div>
+                                    <div className="edqandaanswer">
+                                        <p>{item.answer}</p>
+                                    </div>
+                                </div>
+                            </SlideUp>
+                        ))}
+                    </div>
                 </div>
             </div>
         </>

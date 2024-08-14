@@ -1,8 +1,8 @@
 import React from 'react'
-import img1 from '../../../../Resources/Data and Analytics/aicard1.jpg'
-import img2 from '../../../../Resources/Data and Analytics/aicard2.jpeg'
-import img3 from '../../../../Resources/Data and Analytics/aicard3.jpg'
-import img4 from '../../../../Resources/Data and Analytics/aicard4.jpeg'
+import img1 from '../../../../New Resources/AI & ML/Picture1.png'
+import img2 from '../../../../New Resources/AI & ML/Picture2.png'
+import img3 from '../../../../New Resources/AI & ML/Picture3.png'
+import img4 from '../../../../New Resources/AI & ML/Picture4.png'
 
 export default function Aimlcards() {
     const cultureData = [

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Home Page/Components/Navbar'
+import Navbar from '../Home Page/Navbar'
 import ResumeForm from '../About Page/Components/ResumeForm'
 import Footer from '../Home Page/Components/Footer'
 import ContactPage from '../Contact Page/ContactPage'

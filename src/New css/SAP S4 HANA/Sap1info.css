@@ -39,5 +39,16 @@
 }
 
 .sap1infolist img {
-    width: 90%;
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .sap1infolists{
+        margin-top: 3vh;
+        gap: 2vh;
+    }
+
+    .sap1infolist img{
+        width: 100%;
+    }
 }

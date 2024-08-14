@@ -5,6 +5,11 @@ import MuiPhoneNumber from 'material-ui-phone-number';
 import emailjs from '@emailjs/browser';
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
+import { FadeUp } from '../../Animations/Animations';
+import { hourglass } from 'ldrs'
+
+
+hourglass.register()
 
 export default function CareerAppForm() {
     const form = useRef();
@@ -15,9 +20,24 @@ export default function CareerAppForm() {
     const [experience, setExperience] = useState();
     const [resumeText, setResumeText] = useState();
     const [resumeFile, setResumeFile] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
     let emptyCounter;
 
+    function disableScroll() {
+        document.body.classList.add("remove-scrolling");
+    }
+
+    function enableScroll() {
+        document.body.classList.remove("remove-scrolling");
+    }
+
     const sendApplication = async () => {
+        disableScroll();
+        setIsLoading(!isLoading);
+        document.querySelector('.submitemailpopup').style.display = "flex";
+        document.querySelector('.submitemailpopupfailed').style.display = "flex";
+        let overlay = document.querySelector('.emailoverlay').style.display = "flex";
+
         let dataSend = {
             fullname: name,
             phonenumber: phoneNumber,
@@ -28,7 +48,7 @@ export default function CareerAppForm() {
             resumefile: resumeFile
         }
 
-        const res = await fetch(`https://thrivexwebbackend.onrender.com/sendapplication`, {
+        let res = await fetch(`https://thrivexwebbackend.onrender.com/sendapplication`, {
             method: "POST",
             body: JSON.stringify(dataSend),
             headers: {
@@ -36,31 +56,67 @@ export default function CareerAppForm() {
                 "Content-Type": "application/json"
             },
         })
-            .then((res) => {
-                console.log(res);
-                if (res.status > 199 && res.status < 300) {
-                    alert('Sent Successfully');
-                }
-            });
+
+        res = await res.json();
+        console.log(res.msg);
+
+        if (res.msg == 'sent') {
+            // enableScroll()
+            setIsLoading(false);
+            document.querySelector('.submitemailpopup').style.transform = "scale(1)";
+        } else {
+            setIsLoading(false);
+            // enableScroll()
+            document.querySelector('.submitemailpopupfailed').style.transform = "scale(1)";
+        }
     };
 
     const checkEveryField = () => {
-        // console.log(document.getElementById("sapbtpfileinput").value);
         console.log(document.querySelector('resumefile'));
         emptyCounter = 0;
         const elements = document.getElementsByClassName("sapbtpinputtext");
+        const element2 = document.querySelector(".sapbtptextarea");
+        const errormsg = document.getElementsByClassName("formerrormessage");
         console.log(elements);
 
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
+            // console.log(element);
             if (element.value == "" || elements[i].value == "Select...") {
                 element.style.border = "1px solid red"
                 emptyCounter++;
+                errormsg[i].style.visibility = "visible"
+                errormsg[i].innerHTML = "This field cannot be empty"
+                emptyCounter++;
+                // console.log(i);
+
             } else {
                 element.style.border = "none"
+
+                errormsg[i].style.visibility = "hidden"
             }
         }
-        console.log(emptyCounter);
+        if (elements[4].children[1].value.length < 14) {
+            
+            elements[4].style.border = "1px solid red"
+            errormsg[4].style.visibility = "visible"
+            errormsg[4].innerHTML = "This field cannot be empty"
+            emptyCounter++;
+        } else {
+            elements[4].style.border = "none"
+            errormsg[4].style.visibility = "hidden"
+        }
+        
+        console.log(elements[3]);
+        if (!elements[3].value.includes("@") || !elements[3].value.includes(".com")) {
+            elements[3].style.border = "1px solid red"
+            errormsg[3].style.visibility = "visible"
+            errormsg[3].innerHTML = "Please enter a valid email"
+            emptyCounter++;
+        } else {
+            elements[3].style.border = "none"
+            errormsg[3].style.visibility = "hidden"
+        }
         if (emptyCounter == 0) {
             sendApplication();
         }
@@ -80,54 +136,74 @@ export default function CareerAppForm() {
             reader.readAsDataURL(file);
         }
     }
-    
+
     return (
         <>
-            <div className="sapbtpappointmentparentcontainer" style={{ width: '100vw' }}>
-                <div className="sapbtpappointmentchildcontainer" style={{ width: '65vw', margin: 'auto' }}>
-                    <div className='careerappformheadercontainer'>
-                        Ready to Join Us?
-                    </div>
-                    <div className='careerappformdesc'>
-                        If you believe you have what it takes to thrive at Thrivex, we want to hear from you.
-                    </div>
+            {isLoading && <l-hourglass className="loadingtimer"
+                size="100"
+                bg-opacity="0.1"
+                speed="1.8"
+                color="#0eaae3"
+                style={{
+                    position: 'fixed',
+                    top: '45%',
+                    left: '48%',
+                    zIndex: '12'
+                }}
+            ></l-hourglass>}
+            <div className="dataenginfomaincontainer" >
+                <div className="dataenginfochildcontainer" >
+                    <FadeUp>
+
+                        <div className='dataenginfomainheader'>
+                            Ready to Join Us?
+                        </div>
+                        <div className='dataenginfomaindesc'>
+                            If you believe you have what it takes to thrive at Thrivex, we want to hear from you.
+                        </div>
+                    </FadeUp>
                     <div className='sapbtpappointmentmaincontainer' style={{ marginTop: '4vh' }}>
                         <div className='sapbtpformsection'>
-                            <div className='sapbtpformheader'>
+                            <div className='dataenginfomainheader' style={{ marginBottom: '1vh' }}>
                                 Application Form
                             </div>
                             <form ref={form}>
                                 <div className='sapbtpformbody'>
                                     <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
                                         <label>Job Position<span>*</span></label>
-                                        <input type='text' className='sapbtpinputtext' value={position} onChange={(e) => { setEmailAddress(e.target.value) }} />
+                                        <input type='text' className='sapbtpinputtext' value={position} onChange={(e) => { setPosition(e.target.value) }} />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox'>
                                         <label>Upload Resume<span>*</span></label>
-                                        <input type="file" name="" onChange={(e) => { customBase64Uploader(e) }} id="sapbtpfileinput" className='sapbtpinputtext ' />
+                                        <input type="file" accept=".docx,.pdf" placeholder='Maximum 5mb' onChange={(e) => { customBase64Uploader(e) }} id="sapbtpfileinput" className='sapbtpinputtext ' />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox'>
                                         <label>Name<span>*</span></label>
                                         <input type='text' className='sapbtpinputtext resumefile' value={name} onChange={(e) => { setName(e.target.value) }} />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox'>
                                         <label>Email Address<span>*</span></label>
                                         <input type='text' className='sapbtpinputtext' value={emailAddress} onChange={(e) => { setEmailAddress(e.target.value) }} />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
                                         <label>Phone Number<span>*</span></label>
-                                        {/* <MuiPhoneNumber defaultCountry={'in'} value={phoneNumber} onChange={(e) => { setPhoneNumber(e.target.value) }} style={{ color: 'white', width: '100%', borderBottom: '1px solid transparent' }} /> */}
                                         <PhoneInput
-                                            inputStyle={{ fontSize: '1.3rem' }}
+                                            className="sapbtpinputtext"
                                             country={"in"}
                                             enableSearch={true}
                                             value={phoneNumber}
                                             onChange={(phone) => setPhoneNumber(phone)}
                                         />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
                                         <label>Select Experience<span>*</span></label>
                                         <select value={experience} onChange={(e) => { setExperience(e.target.value) }} className='sapbtpinputtext'>
+                                            <option>Select...</option>
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -140,10 +216,12 @@ export default function CareerAppForm() {
                                             <option>10</option>
                                             <option>10+</option>
                                         </select>
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpinputbox sapbtptextarea'>
                                         <label>Paste Resume<span>*</span></label>
                                         <textarea type='text' minLength={100} placeholder='Minimum 100 characters' rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} className='sapbtpinputtext' />
+                                        <p className='formerrormessage'>demo</p>
                                     </div>
                                     <div className='sapbtpprivacypolicy'>
                                         Your data will be processed by Thrivex in accordance with our <Link to='/privacypolicy'>Privacy Policy</Link>
@@ -155,6 +233,33 @@ export default function CareerAppForm() {
                             </form>
                         </div>
                     </div >
+                </div>
+            </div>
+            <div className="emailoverlay" style={{ height: '536.5vh' }}></div>
+            <div className="submitemailpopup">
+                <div className="submitemailpopupchild">
+                    <div className="submitemailpopuphead">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div className="submitemailpopupdesc">
+                        <p>Thank You!</p>
+                        <label>Your Information has been submitted.</label>
+                        <label>we will contact you shortly.</label>
+                        <Link to='/' onClick={() => { enableScroll() }} className='submitemailpopupdescbackbtn'>Back Home</Link>
+                    </div>
+                </div>
+            </div>
+            <div className="submitemailpopupfailed">
+                <div className="submitemailpopupchild">
+                    <div className="submitemailpopuphead">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div className="submitemailpopupdesc">
+                        <p>Sorry :(</p>
+                        <label>Your Information count not be sent.</label>
+                        <label>Please try again.</label>
+                        <Link to='/' onClick={() => { enableScroll() }} className='submitemailpopupdescbackbtn'>Back Home</Link>
+                    </div>
                 </div>
             </div>
         </>

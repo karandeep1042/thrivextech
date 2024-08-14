@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
+import img1 from '../../../../New Resources/Product Engineering/Integration/Picture1.png'
 
 export default function IntegrationInfo2() {
     return (

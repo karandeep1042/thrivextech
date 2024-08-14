@@ -145,3 +145,37 @@
     color: white;
     padding-bottom: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    .allengserchildcontainer{
+        width: 80vw;
+    }
+
+    .allengsercards{
+        margin-top: 3vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .allengsercard{
+        width: 100%;
+    }
+
+    .allengsercardimg i{
+        font-size: 1.5rem;
+    }
+
+    .allengsercardheading{
+        font-size: 1.1rem;
+    }
+
+    .allengsercarddiv1{
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+    
+    .allengsercarddiv2{
+        padding: 30px 30px;
+        font-size: 1.1rem;
+    }
+}

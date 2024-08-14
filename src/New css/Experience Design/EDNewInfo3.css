@@ -14,10 +14,6 @@
     font-size: 2rem;
     font-weight: 500;
     color: #0eaae3;
-    animation: slideInUp linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
 }
 
@@ -29,10 +25,6 @@
 }
 
 .edinfo3list {
-    animation: slideInUp linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
     margin-top: 3vh;
     font-size: 1.6rem;
@@ -47,16 +39,31 @@
 }
 
 .edinfo3listdescription {
-    color: rgb(53, 53, 53);
+    color: rgb(117, 117, 117);
 }
 
 .edinfo3description {
     margin-top: 5vh;
     font-size: 1.6rem;
     color: #0eaae3;
-    animation: slideInUp linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .ednewinfo3childcontainer{
+        width: 80vw;
+    }
+
+    .edinfo3header{
+        font-size: 1.5rem;
+    }
+
+    .edinfo3lists{
+        gap: 2vh;
+    }
+
+    .edinfo3list{
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
 }

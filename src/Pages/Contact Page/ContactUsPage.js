@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FileUpload } from 'primereact/fileupload';
 import MuiPhoneNumber from 'material-ui-phone-number';
-import Navbar from '../Home Page/Components/Navbar';
+import Navbar from '../Home Page/Navbar';
 import Footer from '../Home Page/Components/Footer';
 import emailjs from '@emailjs/browser';
 import PhoneInput from "react-phone-input-2";

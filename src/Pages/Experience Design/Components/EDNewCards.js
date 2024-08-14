@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -10,6 +10,7 @@ import img5 from '../../../New Resources/Experience Design/logo5.png'
 import img6 from '../../../New Resources/Experience Design/logo6.png'
 import img7 from '../../../New Resources/Experience Design/logo7.png'
 import '../../../New css/CardSlider/CardSlider.css'
+import { FadeUp } from '../../Animations/Animations';
 
 export default function EDNewCards() {
 
@@ -60,50 +61,85 @@ export default function EDNewCards() {
     };
 
     const settings = {
+        dots: true,
         className: "center",
         centerMode: true,
         centerPadding: '0px',
         infinite: true,
         slidesToShow: 3,
         speed: 500,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     };
+
+    const calculateCardHeight = () => {
+        let elements = document.getElementsByClassName('slidercard');        
+        let maxHeight=0;
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];    
+            if(element.clientHeight>maxHeight){
+                maxHeight=element.clientHeight
+            }
+        }
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            element.style.height=`${maxHeight+20}px`
+        }
+    }
+
+    useEffect(() => {
+        calculateCardHeight();
+    }, [])
 
     return (
         <>
-            <div className="slider-container" style={{ width: '65vw', margin: 'auto' }} >
-                <div className="dataenginfodiv1" style={{ marginBottom: '3vh' }}>
-                    <div className="dataenginfomainheader">
-                        <p>Our Services</p>
-                    </div>
-                </div>
-                <Slider ref={slider => {
-                    sliderRef = slider;
-                }} {...settings}>
-                    {cardsinfo2.map((option, index) => (
-                        <div className="slidercard" style={{ display: 'flex' }}>
-                            <div className="slidercardsection1">
-                                <div className="slidercardlogo">
-                                    <img src={option.logo} alt="" />
-                                </div>
-                                <div className="slidercardheader">
-                                    <p>{option.head}</p>
-                                </div>
-                            </div>
-                            <div className="slidercardsection2">
-                                <div className="slidercarddesc">
-                                    <p>{option.desc}</p>
-                                </div>
-                            </div>
+            <FadeUp>
+                <div className="slider-container" >
+                    <div className="dataenginfodiv1">
+                        <div className="dataenginfomainheader">
+                            <p>Our Services</p>
                         </div>
-                    ))}
-                </Slider>
-                <div style={{ textAlign: "center" }}>
-                    <div className="slider-buttons">
-                        <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn" onClick={previous}></i>
-                        <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn" onClick={next}></i>
+                    </div>
+                    <Slider ref={slider => {
+                        sliderRef = slider;
+                    }} {...settings}>
+                        {cardsinfo2.map((option, index) => (
+                            <div className="slidercard" style={{ display: 'flex' }}>
+                                <div className="slidercardsection1">
+                                    <div className="slidercardlogo">
+                                        <img src={option.logo} alt="" />
+                                    </div>
+                                    <div className="slidercardheader">
+                                        <p>{option.head}</p>
+                                    </div>
+                                </div>
+                                <div className="slidercardsection2">
+                                    <div className="slidercarddesc">
+                                        <p>{option.desc}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                    <div style={{ textAlign: "center" }}>
+                        <div className="slider-buttons">
+                            <i id="leftslidebtn" class="fa-solid fa-chevron-left leftslidebtn" onClick={previous}></i>
+                            <i id="rightslidebtn" class="fa-solid fa-chevron-right rightslidebtn" onClick={next}></i>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeUp>
         </>
     )
 }

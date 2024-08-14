@@ -1,4 +1,4 @@
-.ednewinfomaincontainer{
+.ednewinfomaincontainer {
     width: 65vw;
     /* background-color: aqua; */
     margin: 5vh auto;
@@ -6,22 +6,22 @@
     /* margin-bottom: 3vh; */
 }
 
-.ednewinfodiv1{
+.ednewinfodiv1 {
     width: 50%;
 }
 
-.ednewinfodiv2{
+.ednewinfodiv2 {
     width: 50%;
     transition: transform .3s ease-in-out;
 }
 
-.ednewinfodiv2 img{
+.ednewinfodiv2 img {
     width: 100%;
     transform: translateY(4vh);
     transition: transform .3s ease-in-out;
 }
 
-.ednewinfomainheader{
+.ednewinfomainheader {
     margin: 5vh 0vw;
     /* font-size: 2.5rem; */
     /* font-weight: 600; */
@@ -30,7 +30,7 @@
     color: #0eaae3;
 }
 
-.ednewinfomainlists{
+.ednewinfomainlists {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -38,31 +38,85 @@
     height: 60%;
 }
 
-.ednewinfomainlist{
+.ednewinfomainlist {
     font-size: 1.6rem;
     color: rgb(53, 53, 53);
-    animation: fadein linear;
-    animation-timeline: view();
-    animation-range-start: 0px;
-    animation-range-end: 200px;
 }
 
-.ednewinfomainlist .ednewinfomainlistheader{
+.ednewinfomainlist .ednewinfomainlistheader {
     font-weight: 600;
     font-size: 1.6rem;
 }
 
-.ednewinfomainlist .ednewinfomainlistdesc{
+.ednewinfomainlist .ednewinfomainlistdesc {
     font-size: 1.6rem;
 }
 
-@keyframes fadein {
-    from {
-        scale: .8;
-        opacity: 0%;
+.fadeparent span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.slideparent span {
+    display: block;
+    transform: translateX(-100px);
+    /* opacity: 0; */
+}
+
+.scaleparent span {
+    display: block;
+    /* transform: translateX(-100px); */
+    scale: 1;
+}
+
+.fadeinparent span{
+    display: block;
+    transform: translateX(0px);
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .ednewinfomaincontainer {
+        width: 80vw;
+        margin: 8vh auto;
+        flex-direction: column;
     }
-    to{
-        scale: 1;
-        opacity: 100%;
+
+    .ednewinfodiv1 {
+        width: 100%;
+    }
+
+    .ednewinfomainheader {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .ednewinfomainlists {
+        margin-top: 4vh;
+        gap: 2vh;
+    }
+
+    .ednewinfomainlist .ednewinfomainlistheader {
+        font-size: 1.1rem;
+    }
+
+    .ednewinfomainlist .ednewinfomainlistdesc {
+        font-size: 1.1rem;
+    }
+
+    .ednewinfodiv2 {
+        width: 100%;
+    }
+
+    .slider-container {
+        width: 90vw;
+        margin: 8vh auto;
+    }
+
+
+
+    .slick-slider {
+        margin-top: 3vh;
     }
 }

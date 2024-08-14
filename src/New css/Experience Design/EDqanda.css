@@ -13,26 +13,18 @@
 .edqandacontainer {
     display: flex;
     flex-direction: column;
-    /* gap: 2vh; */
 }
 
 .eqandmainheader {
-    /* font-size: 2.5rem;
-    font-weight: 600; */
     font-size: 2rem;
     font-weight: 500;
     color: #0eaae3;
-    animation: slideInUp linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 150px;
     transition: .3s;
 }
 
 .edqandaquestion {
     font-size: 1.6rem;
     font-weight: 600;
-    /* border: 1px solid black; */
     background-color: rgb(236, 236, 236);
     padding: 25px;
     display: flex;
@@ -41,9 +33,6 @@
     cursor: pointer;
     animation: popUp linear;
     border-radius: 5px;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 150px;
     transition: .3s;
 }
 
@@ -52,7 +41,6 @@
 }
 
 .edqandaanswer {
-    /* max-height: 0px; */
     overflow: hidden;
     display: none;
     padding: 25px;
@@ -61,12 +49,26 @@
     color: rgb(53, 53, 53);
 }
 
-@keyframes popUp {
-    from {
-        transform: scale(0.5);
+@media only screen and (max-width: 600px) {
+    .edqandamaincontainer{
+        width: 80vw;
+        margin: 8vh auto;
     }
 
-    to {
-        transform: scale(1);
+    .edqandachildcontainer{
+        gap: 2vh;
+    }
+
+    .edqandaquestion{
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .edqandaanswer{
+        font-size: 1.1rem;
+    }
+
+    .eqandmainheader{
+        font-size: 1.5rem;
     }
 }

@@ -1,6 +1,6 @@
 .ednewinfo2maincontainer {
     /* width: 100vw; */
-    margin: 12vh 0;
+    margin: 8vh 0;
 }
 
 .ednewinfo2childcontainer {
@@ -17,10 +17,6 @@
 
 .ednewinfo2div2 {
     margin: 4vh 0;
-    animation: slideInLeft linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
 }
 
@@ -34,55 +30,30 @@
     font-size: 2rem;
     font-weight: 500;
     color: #0eaae3;
-    animation: slideInLeft linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
 }
 
 .ednewinfo1description {
     font-size: 1.6rem;
     color: rgb(53, 53, 53);
-    animation: slideInRight linear;
-    animation-timeline: view(y);
-    animation-range-start: 10px;
-    animation-range-end: 250px;
     transition: .3s;
 }
 
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-150px);
-        opacity: 0;
+
+@media only screen and (max-width: 600px) {
+    .ednewinfo2childcontainer{
+        width: 80vw;
     }
 
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(250px);
-        opacity: 0;
+    .ednewinfo2div1{
+        gap: 2vh;
     }
 
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(250px);
-        opacity: 0;
+    .ednewinfo1header{
+        font-size: 1.5rem;
     }
 
-    to {
-        transform: translateY(0px);
-        opacity: 1;
+    .ednewinfo1description{
+        font-size: 1.1rem;
     }
 }

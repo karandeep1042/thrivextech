@@ -1,30 +1,55 @@
 import React from 'react'
 import img1 from '../../../Resources/dtsinfo.jpg'
 import '../../../New css/Digital Talent Solutions/DtsInfo2.css'
+import { FadeUp } from '../../Animations/Animations'
 
 export default function DtsInfo2() {
     return (
         <>
-            <div className="dtsinfo2maincontainer">
-                <div className="dtsinfo2childcontainer">
-                    <div className="dtsinfo2header">
-                        <p>Industry-Specific Expertise</p>
-                    </div>
-                    <div className="dtsinfo2description">
+            <div className="dataenginfomaincontainer">
+                <div className="dataenginfochildcontainer">
+                    <FadeUp>
+                        <div className="dataenginfomainheader">
+                            <p>Industry-Specific Expertise</p>
+                        </div>
+                    </FadeUp>
+                    <div className="dataenginfomaindesc">
                         <p>
-                            Our experience spans a wide range of industries, providing specialized digital talent solutions for: <br /><br />
+                            <FadeUp>
+                                Our experience spans a wide range of industries, providing specialized digital talent solutions for: <br /><br />
+                            </FadeUp>
                             <ul>
-                                <li>Banking and Financial Services</li>
-                                <li>Insurance</li>
-                                <li>Healthcare</li>
-                                <li>Life Sciences</li>
-                                <li>Technology</li>
-                                <li>Media</li>
-                                <li>Telecommunications</li>
-                                <li>Consumer Goods</li>
-                                <li>Retail</li>
+                                <FadeUp>
+                                    <li>Banking and Financial Services</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Insurance</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Healthcare</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Life Sciences</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Technology</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Media</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Telecommunications</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Consumer Goods</li>
+                                </FadeUp>
+                                <FadeUp>
+                                    <li>Retail</li>
+                                </FadeUp>
                             </ul> <br /><br />
-                            We understand the unique challenges of each industry and bring in technology talent that meets those specific needs.
+                            <FadeUp>
+                                We understand the unique challenges of each industry and bring in technology talent that meets those specific needs.
+                            </FadeUp>
 
                         </p>
                     </div>

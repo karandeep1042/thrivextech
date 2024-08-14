@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Home Page/Components/Navbar";
+import Navbar from "../Home Page/Navbar";
 import Footer from "../Home Page/Components/Footer";
 import ContactHero from "./Components/ContactHero";
 import ContactForm from "./Components/ContactForm";
@@ -17,8 +17,8 @@ export default function ContactPage(props) {
     <>
       <div className="contactpagemaincontainer">
         <div className="contactpageheader">{head1}<span>{head2}</span></div>
-        <div className="contactpageheader" style={{ fontSize: '1.6rem', textAlign: 'center', width: '60vw' }}>{desc}</div>
-        <Link to='/contact' style={{ textDecoration: 'none', color: 'white' }} className="contactpagebutton">Contact Us</Link>
+        <div className="contactpagedesc" >{desc}</div>
+        <Link to='/contact' className="contactpagebutton">Contact Us</Link>
       </div>
     </>
   );

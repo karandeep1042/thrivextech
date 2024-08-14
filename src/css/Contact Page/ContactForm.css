@@ -56,8 +56,8 @@
   gap: 5vh;
   align-items: center;
   flex-direction: column;
-  height: 50vh;
-  background-color: #191a1a;
+  height: 45vh;
+  background-color: #3E3E3E;
   color: white;
 }
 
@@ -71,22 +71,151 @@
 }
 
 .contactpagebutton {
-  border: 1px solid white;
+  border: 1px solid #0eaae3;
   padding: 2vh 3vw;
   cursor: pointer;
   font-size: 1.5rem;
-  transition: .3s;
+  background: -webkit-linear-gradient(0deg, transparent 50%, #0eaae3 50%);
+  position: relative;
+  background-size: 200% 100%;
+  transition: .4s;
+  color: #0eaae3;
+  text-decoration: none;
 }
 
 .contactpagebutton:hover {
-  border: 1px solid #0eaae3;
-  background-color: #0eaae3;
+  background-position: -100% 0;
   color: white;
 }
 
+.submitemailpopup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+  border-radius: 5px;
+  background-color: #595959;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
+  transform: scale(0);
+  transition: .3s;
+}
+
+.submitemailpopupfailed {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+  border-radius: 5px;
+  background-color: #595959;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.2);
+  transform: scale(0);
+  transition: .3s;
+}
+
+.submitemailpopuphead {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  /* background-color: #01C5FD; */
+  /* border-radius: ; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.submitemailpopuphead i {
+  padding: 20px;
+  background-color: #0eaae3;
+  position: absolute;
+  top: -4vh;
+  border-radius: 50%;
+}
+
+.submitemailpopupdesc {
+  font-size: 1.6rem;
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  color: white;
+  padding-bottom: 3vh;
+}
+
+.submitemailpopupdesc label {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.submitemailpopupdescbackbtn {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  background-color: #0eaae3;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  text-decoration: none;
+  color: white;
+}
+
+.submitemailpopupdescbackbtn:hover {
+  background-color: #077ba5;
+}
+
+.emailoverlay {
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 100vw;
+  height: 200vh;
+  position: absolute;
+  z-index: 4;
+  display: none;
+  top: -1px;
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.contactpagedesc {
+  font-size: 1.5rem;
+}
+
+.remove-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
 
 @media only screen and (max-width : 480px) {
+  .contactpagemaincontainer {
+    gap: 4vh;
+    height: 45vh;
+  }
+
   .contactpageheader {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .contactpagedesc {
+    width: 80vw;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contactpagebutton {
+    padding: 2vh 10vw;
+    font-size: 1.1rem;
   }
 }

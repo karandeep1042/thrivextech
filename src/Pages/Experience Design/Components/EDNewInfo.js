@@ -1,7 +1,8 @@
-import React,{useEffect} from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../../../New css/Experience Design/EDNewInfo.css'
 import img1 from '../../../New Resources/Experience Design/EDInfo.png'
-
+import { motion, isInView, useAnimation, useIsPresent, useInView } from "framer-motion";
+import { FadeRight, FadeLeft, FadeUp, FadeDown } from '../../Animations/Animations';
 export default function EDNewInfo() {
 
     const serviceslist = [
@@ -48,26 +49,32 @@ export default function EDNewInfo() {
 
     return (
         <>
-            <div className="ednewinfomaincontainer" >
+            <div className="ednewinfomaincontainer">
                 <div className="ednewinfodiv1">
-                    <div className="ednewinfomainheader">
-                        <p>UX vs. CX: Understanding the Difference</p>
+                    <div className="ednewinfomainheader" >
+                        <FadeUp>UX vs. CX: Understanding the Difference</FadeUp>
                     </div>
                     <div className="ednewinfomainlists">
                         {serviceslist2.map((item, index) => (
-                            <div className="ednewinfomainlist" key={index}>
-                                <div className="ednewinfomainlistheader">
-                                    <p>{item.header}</p>
+                            <FadeUp>
+                                <div className="ednewinfomainlist" key={index} >
+                                    <div className="ednewinfomainlistheader">
+                                        <p>{item.header}</p>
+                                    </div>
+                                    <div className="ednewinfomainlistdesc">
+                                        <p>{item.desc}</p>
+                                    </div>
                                 </div>
-                                <div className="ednewinfomainlistdesc">
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
+                            </FadeUp>
                         ))}
                     </div>
                 </div>
-                <div className="ednewinfodiv2">
-                    <img src={img1} id='ednewinfoimg' alt="" />
+                <div
+                    className="ednewinfodiv2"
+                >
+                    <FadeUp>
+                        <img src={img1} id='ednewinfoimg' alt="" />
+                    </FadeUp>
                 </div>
             </div>
         </>

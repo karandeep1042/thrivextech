@@ -4,6 +4,7 @@ import img2 from '../../../../Resources/Product Engineering/modernizatiohero.jpg
 import img3 from '../../../../Resources/Product Engineering/cloudnativehero.webp'
 import img4 from '../../../../Resources/Product Engineering/integrationhero.jpg'
 import { Link } from 'react-router-dom'
+import { FadeUp, SlideRight } from '../../../Animations/Animations'
 
 export default function AllEngineeringServices(props) {
 
@@ -36,10 +37,10 @@ export default function AllEngineeringServices(props) {
 
     return (
         <>
-            <div className='allengsermaincontainer'>
-                <div className="allengserchildcontainer">
-                    <div className="allengserdiv1">
-                        <div className='allengsercardsheader'>
+            <div className='dataenginfomaincontainer'>
+                <div className="dataenginfochildcontainer">
+                    <div className="dataenginfodiv1">
+                        <div className='dataenginfomainheader'>
                             Related Engineering Services
                         </div>
                     </div>

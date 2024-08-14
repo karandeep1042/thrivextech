@@ -1,4 +1,5 @@
 import React from 'react'
+import { FadeUp } from '../../../Animations/Animations'
 
 export default function Sap1info3() {
 
@@ -29,24 +30,28 @@ export default function Sap1info3() {
         <>
             <div className="ednewinfo3maincontainer">
                 <div className="ednewinfo3childcontainer">
-                    <div className="edinfo3header">
-                        <p>
-                            Maximize Business Benefits with SAP S/4HANA
-                        </p>
-                    </div>
+                    <FadeUp>
+                        <div className="edinfo3header">
+                            <p>
+                                Maximize Business Benefits with SAP S/4HANA
+                            </p>
+                        </div>
+                    </FadeUp>
                     <div className="edinfo3lists">
                         {activitiesdata.map((item, index) => (
-                            <div className="edinfo3list edinfo3listtype2">
-                                <i className="fa-regular fa-circle-check"></i>
-                                <div className="edinfo3listchildcontainer">
-                                    <div className="edinfo3listheader">
-                                        <p>{item.header}</p>
-                                    </div>
-                                    <div className="edinfo3listdescription">
-                                        <p>{item.description}</p>
+                            <FadeUp>
+                                <div className="edinfo3list edinfo3listtype2">
+                                    <i className="fa-regular fa-circle-check"></i>
+                                    <div className="edinfo3listchildcontainer">
+                                        <div className="edinfo3listheader">
+                                            <p>{item.header}</p>
+                                        </div>
+                                        <div className="edinfo3listdescription">
+                                            <p>{item.description}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </FadeUp>
                         ))}
                     </div>
                 </div>

@@ -9,7 +9,7 @@
 }
 
 .careerinfodiv1 {
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
 }
 
 .careerinfoheader {
@@ -33,3 +33,4 @@
 .careerinfodesc ul li::marker {
     color: #0eaae3;
 }
+

@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../css/Home Page/Footer.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Footer() {
+
+  const location = useLocation();
+
+  const checkRoute = (e) => {
+    let str = e.target.href.slice(21);
+    if(str==location.pathname){
+      window.scrollTo(0, 0);
+    }
+  }
+
+  
+
   return (
     <>
       <div className="footermaincontainer">
@@ -10,16 +23,16 @@ export default function Footer() {
           <div className="footersection2">
             <div className="footersection2header">Useful links</div>
             <div className="footersection2links">
-              <Link className="footersection2linkschildcontainer footersection2linksheader" to='/experiencedesign'>Experience Design</Link>
-              <Link className="footersection2linkschildcontainer footersection2linksheader" to='/digitaltalentslutions'>Digital Talent Solutions</Link>
+              <Link className="footersection2linkschildcontainer footersection2linksheader" onClick={(e) => { checkRoute(e) }} to='/experiencedesign'>Experience Design</Link>
+              <Link className="footersection2linkschildcontainer footersection2linksheader" onClick={(e) => { checkRoute(e) }} to='/digitaltalentsolutions'>Digital Talent Solutions</Link>
               <div className="footersection2linkschildcontainer">
                 <div className="footersection2linksheader">
                   Data & AI
                 </div>
                 <div className="footersection2linksinfo">
-                  <Link to='/dataengineering'>Data Engineering</Link>
-                  <Link to='/insightsanalytics'>Insights & Analytics</Link>
-                  <Link to='/aiml'>AI & ML</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/dataengineering'>Data Engineering</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/insightsanalytics'>Insights & Analytics</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/aiml'>AI & ML</Link>
                 </div>
               </div>
               <div className="footersection2linkschildcontainer">
@@ -27,10 +40,10 @@ export default function Footer() {
                   Engineering
                 </div>
                 <div className="footersection2linksinfo">
-                  <Link to='/softwaredevelopment'>Software Engineering</Link>
-                  <Link to='/modernization'>Modernization</Link>
-                  <Link to='/cloudnative'>Cloud Native</Link>
-                  <Link to='/integration'>Integration</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/softwaredevelopment'>Software Engineering</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/modernization'>Modernization</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/cloudnative'>Cloud Native</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/integration'>Integration</Link>
                 </div>
               </div>
               <div className="footersection2linkschildcontainer">
@@ -38,14 +51,14 @@ export default function Footer() {
                   Enterprise Applications
                 </div>
                 <div className="footersection2linksinfo">
-                  <Link to='/saps4hana'>SAP S/4HANA</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/saps4hana'>SAP S/4HANA</Link>
                 </div>
                 <div className="footersection2linksheader" style={{ marginTop: '4vh' }}>
                   Platforms
                 </div>
                 <div className="footersection2linksinfo">
-                  <Link to='/sapbtp'>SAP BTP</Link>
-                  <Link to='/qlik'>Qlik</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/sapbtp'>SAP BTP</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/qlik'>Qlik</Link>
                 </div>
               </div>
               <div className="footersection2linkschildcontainer">
@@ -53,8 +66,8 @@ export default function Footer() {
                   About
                 </div>
                 <div className="footersection2linksinfo">
-                  <Link to='/aboutus'>About Us</Link>
-                  <Link to='/career'>Career</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/about'>About Us</Link>
+                  <Link onClick={(e) => { checkRoute(e) }} to='/career'>Career</Link>
                 </div>
               </div>
             </div>
@@ -100,7 +113,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="footersection4">
-            <p>© Thrivex Technologies Pvt. Ltd. 2024 <Link to="/privacypolicy">Privacy & Cookie Policy</Link></p>
+            <p>© Thrivex Technologies Pvt. Ltd. 2024 <Link onClick={(e) => { checkRoute(e) }} to="/privacypolicy">Privacy & Cookie Policy</Link></p>
           </div>
         </div>
       </div>

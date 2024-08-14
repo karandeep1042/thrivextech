@@ -17,7 +17,7 @@
 }
 
 .dataenginfodiv2 {
-    margin-top: 4vh;
+    margin-top: 6vh;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -25,4 +25,66 @@
 
 .dataenginfodiv2 img {
     width: 100%;
+}
+
+.dataenginfomainpic {
+    width: 100%;
+    margin-bottom: 8vh;
+}
+
+.dataenginfomaindesc {
+    margin: 1vh 0;
+    margin-bottom: 4vh;
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+}
+
+.dataenginfomainsubhead {
+    font-size: 1.6rem;
+    /* font-weight: 600; */
+    color: rgb(117, 117, 117);
+    margin: 2vh 0;
+    margin-bottom: 1vh;
+}
+
+.dataengherolistdesc{
+    color: rgb(117, 117, 117);
+}
+
+.dataengherolist{
+    margin-top: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .dataenginfomainheader {
+        font-size: 1.4rem;
+    }
+
+    .dataenginfomaindesc {
+        font-size: 1.1rem;
+    }
+
+    .dataenginfochildcontainer {
+        width: 80vw;
+    }
+
+    .dataenginfodiv2 {
+        margin-top: 2vh;
+    }
+
+    .dataenginfomainsubhead {
+        font-size: 1.1rem;
+    }
+
+    .dataenginfomaindesc {
+        margin-bottom: 0;
+    }
+
+    .accordion li label::before{
+        font-size: 2rem;
+    }
+
+    .accordion li label {
+        font-size: 1.1rem;
+    }
 }

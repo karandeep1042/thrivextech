@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../css/SAP BTP/SapbtpAppointment.css'
-import Navbar from '../Home Page/Components/Navbar'
+import Navbar from '../Home Page/Navbar'
 import SapbptForm from './Components/SapbptForm'
 import Footer from '../Home Page/Components/Footer'
 

@@ -47,7 +47,7 @@
 
 .sapbtpformheader {
     font-size: 2rem;
-    padding: 4vh 0;
+    padding-bottom: 3vh;
     color: #0eaae3;
 }
 
@@ -64,11 +64,16 @@
     display: flex;
     gap: 1vh;
     flex-direction: column;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
+}
+
+.formerrormessage{
+    visibility: hidden;
+    color: red;
 }
 
 .sapbtpinputbox label {
-    color: rgb(117,117,117);
+    color: rgb(117, 117, 117);
     font-size: 1.6rem;
 }
 
@@ -78,14 +83,24 @@
 
 .sapbtpinputbox input {
     background-color: #f2f2f2;
+    color: rgb(53, 53, 53);
     outline: none;
     border: 0;
     padding: 18px 15px;
     font-size: 1.3rem;
 }
 
+/* .sapbtpinputbox input: {} */
+
+.sapbtpinputbox input::-webkit-file-upload-button {
+    content: "Max 5MB";
+    font-size: 1rem;
+    outline: none;
+}
+
 .sapbtpinputbox textarea {
     background-color: #f2f2f2;
+    color: rgb(53, 53, 53);
     outline: none;
     border: 0;
     padding: 1vh .5vw;
@@ -102,6 +117,7 @@
 }
 
 .sapbtpprivacypolicy {
+    color: rgb(117, 117, 117);
     font-size: 1.6rem;
     width: 100%;
 }
@@ -111,20 +127,24 @@
 }
 
 .sapbtpsendmsgbtn {
-    padding: 25px 35px;
+    padding: 20px 35px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 7px;
-    background-color: #0eaae3;
-    color: white;
-    font-size: 1.6rem;
+    color: #0eaae3;
+    border: 2px solid #0eaae3;
+    font-size: 1.3rem;
     transition: .3s;
     margin-top: 4vh;
-    margin-bottom: 4vh;
+    background: -webkit-linear-gradient(0deg, transparent 50%, #0eaae3 50%);
+    position: relative;
+    background-size: 200% 100%;
+    transition: .4s;
 }
 
 .sapbtpsendmsgbtn:hover {
-    transform: scale(1.02);
+    background-position: -100% 0;
+    color: white;
 }
 
 .sapbtpselect {
@@ -138,6 +158,7 @@
 .sapbtpselect select {
     padding: 18px 15px;
     background-color: #f2f2f2;
+    color: rgb(53, 53, 53);
     outline: none;
     border: 0;
     font-size: 1.3rem;
@@ -208,7 +229,7 @@
     box-shadow: none;
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 600px) {
     .sapbtpappointmentmaincontainer {
         display: flex;
         flex-direction: column;
@@ -218,29 +239,46 @@
         width: 100%;
     }
 
-    .sapbtpinfosection {
-        width: 100%;
-    }
-
     .sapbtpformbody {
-        padding: 0;
         width: 100%;
-        justify-content: center;
     }
 
     .sapbtpinputbox {
-        width: 90%;
+        width: 100%;
+    }
+
+    .sapbtpinputbox label {
+        font-size: 1.1rem;
+    }
+
+    .sapbtpinputbox input {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .react-tel-input .form-control {
+        padding: 13px;
+        padding-left: 50px;
+    }
+
+    .sapbtpselect select {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .sapbtpinputbox textarea {
+        padding: 10px;
     }
 
     .sapbtpprivacypolicy {
-        width: 90%;
+        font-size: 1rem;
     }
 
-    .sapbtpformheader {
-        display: flex;
-        font-size: 1.9rem;
-        justify-content: center;
-        padding: 5vh 0;
+    .sapbtpsendmsgbtn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 1.1rem;
 
     }
 }

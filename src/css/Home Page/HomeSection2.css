@@ -1,52 +1,81 @@
-.homepagesection2maincontainer{
+.homepagesection2maincontainer {
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 10vh 0;
-    /* margin-top: 5vh; */
+    width: 60vw;
+    margin: 12vh auto;
 }
 
-.homepagesection2description{
-    margin-top: 3vh;
-}
-
-.homepagesection2buttoncontainer{
+.homepagesection2description {
     margin-top: 5vh;
 }
 
-.homepagesection2mainheader p{
-    font-size: 2rem;
-    /* font-weight: 600; */
-    color: #0eaae3;
+.homepagesection2buttoncontainer {
+    margin-top: 5vh;
 }
 
-.homepagesection2description p{
-    font-size: 1.35rem;
+.homepagesection2mainheader p {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(117, 117, 117);
+}
+
+.homepagesection2description p {
+    font-size: 1.6rem;
     color: #595959;
 }
 
-.homepagesection2buttoncontainer{
+.homepagesection2buttoncontainer {
     display: flex;
 }
 
-.homepagesection2whowearebtn{
+.homepagesection2whowearebtn {
     display: flex;
-    color: white;
-    background-color: #0eaae3;
+    border: 2px solid #0eaae3;
+    color: #0eaae3;
+    /* background-color: #0eaae3; */
     padding: 10px 30px;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     gap: .5vw;
     cursor: pointer;
     text-decoration: none;
-    transition: .3s;
+    background: -webkit-linear-gradient(0deg, transparent 50%, #0eaae3 50%);
+    position: relative;
+    background-size: 200% 100%;
+    transition: .4s;
 }
 
-.homepagesection2whowearebtn i{
+.homepagesection2whowearebtn i {
     padding-top: 5px;
 }
 
-.homepagesection2whowearebtn:hover{
-    transform: scale(1.02);
+.homepagesection2whowearebtn:hover {
+    background-position: -100.3% 0;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .homepagesection2maincontainer{
+        margin-top: 8vh;
+        width: 80vw;
+        gap: 4vh;
+    }
+
+    .homepagesection2mainheader p {
+        font-size: 1.5rem;
+    }
+
+    .homepagesection2description{
+        margin: 0;
+    }
+
+    .homepagesection2description p {
+        font-size: 1.1rem;
+    }
+
+    .homepagesection2buttoncontainer {
+        margin-top: 1vh;
+    }
+
+
 }

@@ -1,17 +1,28 @@
-.edinfo3listtype2{
+.edinfo3listtype2 {
     display: flex;
     flex-direction: row;
 }
 
-.edinfo3listchildcontainer{
+.edinfo3listchildcontainer {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    gap: 1vh;
+    gap: 2vh;
 }
 
-.edinfo3listtype2 i{
+.edinfo3listtype2 i {
     margin-top: 5px;
     font-size: 1.5rem;
     color: #0eaae3;
+}
+
+@media only screen and (max-width: 600px) {
+    .edinfo3listtype2 i {
+        font-size: 1rem;
+        margin-top: 2px;
+    }
+
+    .edinfo3listchildcontainer{
+        gap: 1vh;
+    }
 }

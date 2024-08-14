@@ -1,5 +1,5 @@
-import React from 'react'
-import img1 from '../../../Resources/dtshero.jpg'
+import React, { useEffect } from 'react'
+import img1 from '../../../Resources/SAP/img1.jpg'
 import '../../../New css/SAPBTP/SapbtpInfo.css'
 
 export default function SapbptInfo() {
@@ -23,10 +23,21 @@ export default function SapbptInfo() {
         },
     ]
 
+    useEffect(() => {
+        let elements = document.getElementsByClassName('sapbtpinfolistdiv2')
+        // console.log(document.querySelector('.sapbtpinfolistdiv2'));
+        let elements2 = document.getElementsByClassName('sapbtpinfolistdiv1')
+        for (let i = 0; i < elements.length; i++) {
+            let eleh = elements[i].clientHeight * 1.25;
+            elements2[i].style.height = `${eleh}px`
+        }
+    })
+
     return (
         <>
             <div className="sapbtpinfomaincontainer">
                 <div className="sapbtpinfochildcontainer">
+                    <img src={img1} alt="" style={{ width: '100%', margin: '4vh auto' }} />
                     <div className="sapbtpinfodiv1">
                         <div className="sapbtpinfomainheader">
                             <p>Our Services</p>

@@ -1,5 +1,5 @@
 .homepagesection4maincontainer{
-    background-color: #191a1a;
+    /* background-color: #191A1A; */
     margin-top: 8vh;
     border-bottom: 1px solid rgb(83, 83, 83);
 }
@@ -14,14 +14,15 @@
 }
 
 .homepagesection4mainheader p{
-    text-align: center;
+    /* text-align: center; */
     font-size: 2rem;
-    color: white;
+    color: #0eaae3;
     font-weight: 600;
 }
 
 .homepagesection4mainheader p span{
-    color: #0eaae3;
+    color: black;
+    color: rgb(117, 117, 117);
 }
 
 .homepagesection4cards{
@@ -32,16 +33,15 @@
 
 .homepagesection4cardmaincontainer{
     width: 450px;
-    height: 400px;
+    height: 320px;
     display: flex;
     align-items: center;
-    border-left: 1px solid white;
+    border-left: 2px solid rgb(190, 190, 190);
     margin-bottom: 5vh;
 }
 
 .homepagesection4card{
     width: 100%;
-    /* height: 55%; */
     display: flex;
     margin-left: 1vw;
     flex-direction: column;
@@ -50,18 +50,47 @@
 
 .homepagesection4cardlogo{
     font-size: 3rem;
-    color: #0eaae3;
+    color: white;
 }
 
 .homepagesection4cardheader p{
     font-size: 2rem;
     font-weight: 600;
-    color: white;
+    color: #0eaae3;
 }
 
 .homepagesection4carddesc p{
     font-size: 1.35rem;
-    color: white;
+    color: rgb(117, 117, 117);
 }
 
-.homepagesection4cardmaincontainer{}
+@media only screen and (max-width: 600px) {
+
+    .homepagesection4childcontainer{
+        width: 80vw;
+    }
+
+    .homepagesection4mainheader p{
+        font-size: 1.5rem;
+    }
+
+    .homepagesection4cardmaincontainer{
+        height: 340px;
+    }
+
+    .homepagesection4card{
+        margin-left: 6vw;
+    }
+
+    .homepagesection4cardlogo{
+        font-size: 2.5rem;
+    }
+
+    .homepagesection4cardheader p{
+        font-size: 1.5rem;
+    }
+
+    .homepagesection4carddesc p{
+        font-size: 1.1rem;
+    }
+}
