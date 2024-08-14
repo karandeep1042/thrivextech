@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import '../../../New css/Experience Design/EDNewInfo.css'
 import img1 from '../../../New Resources/Experience Design/EDInfo.png'
-import { motion, isInView, useAnimation, useIsPresent, useInView } from "framer-motion";
-import { FadeRight, FadeLeft, FadeUp, FadeDown } from '../../Animations/Animations';
+import { FadeUp } from '../../Animations/Animations';
 export default function EDNewInfo() {
 
     const serviceslist = [

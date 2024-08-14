@@ -1,8 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { FileUpload } from 'primereact/fileupload';
-import MuiPhoneNumber from 'material-ui-phone-number';
-import emailjs from '@emailjs/browser';
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import { FadeUp } from '../../Animations/Animations';

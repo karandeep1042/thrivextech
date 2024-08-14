@@ -1,18 +1,14 @@
 import React from 'react'
 import Navbar from '../Home Page/Navbar'
 import Footer from '../Home Page/Components/Footer'
-import EDHero from './Components/EDHero'
-import EDInfo from './Components/EDInfo'
 import ContactPage from '../Contact Page/ContactPage'
-import EDHero2 from './Components/EDHero2'
 import EDqanda from './Components/EDqanda'
-import EDNewHero from './Components/EDNewHero'
 import EDNewInfo from './Components/EDNewInfo'
 import EDNewInfo2 from './Components/EDNewInfo2'
-import EDNewInfo3 from './Components/EDNewInfo3'
 import EDNewInfo4 from './Components/EDNewInfo4'
 import DataEngineeringHero from '../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import EDNewCards from './Components/EDNewCards'
+import '../../New css/Experience Design/EDNewInfo3.css'
 
 export default function ExperienceDesign() {
   return (

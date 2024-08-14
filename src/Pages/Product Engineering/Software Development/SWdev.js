@@ -9,8 +9,8 @@ import ContactPage from '../../Contact Page/ContactPage';
 import AllEngineeringServices from './Components/AllEngineeringServices';
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import DtsInfo from '../../Digital Talent Solutions/Components/DtsInfo';
-import img1 from '../../../New Resources/Product Engineering/Software Development/info1.png'
 import TrendingTechnologies from './Components/TrendingTechnologies';
+import img1 from '../../../New Resources/Product Engineering/Software Development/info1.png'
 import img from '../../../New Resources/Product Engineering/Software Development/Picture1.png'
 export default function SWdev() {
   return (

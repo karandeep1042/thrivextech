@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../../Resources/Product Engineering/SWdevinfo.png'
 import '../../../../css/SW dev/SWdevinfo.css'
 import { FadeUp } from '../../../Animations/Animations';
 

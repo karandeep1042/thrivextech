@@ -3,7 +3,6 @@ import "./App.css";
 import HomePage from "./Pages/Home Page/HomePage";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import AboutPage from "./Pages/About Page/AboutPage";
-import ViewBlog from "./Pages/View Blog Page/ViewBlog";
 import Error404Page from "./Pages/Error 404 Page/Error404Page";
 import DigitalTalentSolutions from "./Pages/Digital Talent Solutions/DigitalTalentSolutions";
 import ExperienceDesign from "./Pages/Experience Design/ExperienceDesign";
@@ -38,36 +37,34 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <CookieConsent/>
+        <CookieConsent />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/errorpage" element={<Error404Page />} />
-          <Route path="/viewblog" element={<ViewBlog />} />
-          {/* <Route path="*" element={<Error404Page />} /> */}
           <Route path="/digitaltalentsolutions" element={<DigitalTalentSolutions />} />
           <Route path="/experiencedesign" element={<ExperienceDesign />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
-          <Route path="/dataservices" element={<DataServices/>} />
-          <Route path="/buisnessintelligence" element={<BuisnessInteligence/>} />
-          <Route path="/aiandml" element={<Aimlservices/>} />
-          <Route path="/saps4hana" element={<Saps4hana/>} />
-          <Route path="/sapstechnologyservices" element={<Sap2techservices/>} />
-          <Route path="/softwaredevelopment" element={<SWdev/>} />
-          <Route path="/modernization" element={<Modernization/>} />
-          <Route path="/cloudnative" element={<CloudNative/>} />
-          <Route path="/career" element={<Career/>} />
-          <Route path="/integration" element={<Integration/>} />
-          <Route path="/sapbtp" element={<Sapbpt/>} />
-          <Route path="/sapbptappointment" element={<SapbtpAppointment/>} />
-          <Route path="/contact" element={<ContactUsPage/>} />
-          <Route path="/browseblogs" element={<BrowseBlogs/>} />
-          <Route path="/qlik" element={<QlikPage/>} />
-          <Route path="/dataai" element={<DataAi/>} />
-          <Route path="/dataengineering" element={<DataEngineering/>} />
-          <Route path="/insightsanalytics" element={<InsightsAnalytics/>} />
-          <Route path="/aiml" element={<AIML/>} />
-          <Route path="/cardslider" element={<CardSlider/>} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/dataservices" element={<DataServices />} />
+          <Route path="/buisnessintelligence" element={<BuisnessInteligence />} />
+          <Route path="/aiandml" element={<Aimlservices />} />
+          <Route path="/saps4hana" element={<Saps4hana />} />
+          <Route path="/sapstechnologyservices" element={<Sap2techservices />} />
+          <Route path="/softwaredevelopment" element={<SWdev />} />
+          <Route path="/modernization" element={<Modernization />} />
+          <Route path="/cloudnative" element={<CloudNative />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/integration" element={<Integration />} />
+          <Route path="/sapbtp" element={<Sapbpt />} />
+          <Route path="/sapbptappointment" element={<SapbtpAppointment />} />
+          <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/browseblogs" element={<BrowseBlogs />} />
+          <Route path="/qlik" element={<QlikPage />} />
+          <Route path="/dataai" element={<DataAi />} />
+          <Route path="/dataengineering" element={<DataEngineering />} />
+          <Route path="/insightsanalytics" element={<InsightsAnalytics />} />
+          <Route path="/aiml" element={<AIML />} />
+          <Route path="/cardslider" element={<CardSlider />} />
         </Routes>
       </BrowserRouter>
     </>

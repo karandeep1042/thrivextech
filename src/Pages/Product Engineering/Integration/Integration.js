@@ -11,8 +11,8 @@ import SWdevhead from '../Software Development/Components/SWdevhead'
 import DataEngineeringHero from '../../Data & AI/Data Engineering/Components/DataEngineeringHero'
 import DtsInfo from '../../Digital Talent Solutions/Components/DtsInfo';
 import img1 from '../../../New Resources/Product Engineering/Integration/info.png'
-import TrendingTechnologies from '../Software Development/Components/TrendingTechnologies'
 import img2 from '../../../New Resources/Product Engineering/Integration/Picture4.jpg'
+import TrendingTechnologies from '../Software Development/Components/TrendingTechnologies'
 export default function Integration() {
     return (
         <>

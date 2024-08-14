@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../../Resources/Product Engineering/modernizationinfo.jpg'
 import { FadeUp } from '../../../Animations/Animations'
 
 export default function Modernizationinfo() {

@@ -2,7 +2,6 @@ import React from "react";
 import "../../../css/Home Page/HomeInfo.css";
 import img1 from '../../../Resources/About page/img1.png'
 import '../../../css/About Page/AboutInfo.css'
-import { Link } from "react-router-dom";
 import { FadeLeft, FadeRight, FadeUp } from "../../Animations/Animations";
 
 export default function AbuotInfo() {

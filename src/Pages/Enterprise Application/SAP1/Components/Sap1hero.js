@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../../Resources/SAP/SAP1hero.png'
 import { FadeUp } from '../../../Animations/Animations'
 
 export default function Sap1hero() {

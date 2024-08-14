@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../../../Resources/Product Engineering/modernizatiohero.jpg'
 import { FadeUp } from '../../../Animations/Animations';
 
 export default function CloudNativeInfo() {

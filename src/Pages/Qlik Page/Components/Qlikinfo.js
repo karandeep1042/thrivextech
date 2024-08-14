@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '../../../New Resources/Qlik/qlikinfo1.png'
 import img5 from '../../../New Resources/Qlik/mainpic.png'
 import { FadeUp } from '../../Animations/Animations'
+
 export default function Qlikinfo() {
     return (
         <>

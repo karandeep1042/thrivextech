@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../css/About Page/AboutHero.css";
-import img1 from "../../../Resources/about1.webp";
 import { FadeUp } from "../../Animations/Animations";
 
 export default function AboutHero() {

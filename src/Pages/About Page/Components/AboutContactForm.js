@@ -4,13 +4,8 @@ import MuiPhoneNumber from 'material-ui-phone-number';
 import { Link } from 'react-router-dom';
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import countryList from 'react-select-country-list'
 
 export default function AboutContactForm() {
-    const [country, setCountry] = useState('');
-    const handleChange = (event) => {
-        setCountry(event.target.value);
-    };
 
     const countryList = [
         "Afghanistan",
