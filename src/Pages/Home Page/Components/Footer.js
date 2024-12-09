@@ -77,15 +77,6 @@ export default function Footer() {
             <div className="fs3items">
               <div className="fs3item">
                 <div className="fs3itemsec1">
-                  <i className="fa-solid fa-phone"></i>
-                </div>
-                <div className="fs3itemsec2">
-                  <p><b>Phone No:</b>+91-9820xxx041</p>
-                  <p>Monday - Friday 10am - 8pm</p>
-                </div>
-              </div>
-              <div className="fs3item">
-                <div className="fs3itemsec1">
                   <i className="fa-regular fa-envelope"></i>
                 </div>
                 <div className="fs3itemsec2">
@@ -98,7 +89,7 @@ export default function Footer() {
                   <i className="fa-solid fa-location-dot"></i>
                 </div>
                 <div className="fs3itemsec2">
-                  <p><b>Office Address:</b></p>
+                  <p><b>Registered Address:</b></p>
                   <p>Thrivex Technologies Pvt. Ltd. 4th Floor, Master Mind IV, Royal Palms, Goregaon (East), Mumbai – 400 065, Maharashtra.</p>
                 </div>
               </div>

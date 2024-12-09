@@ -126,7 +126,7 @@ export default function Navbar() {
           list2: [
             {
               title: 'Sotware Engineering',
-              link: '/softwaredevelpoment'
+              link: '/softwaredevelopment'
             },
             {
               title: 'Modernization',

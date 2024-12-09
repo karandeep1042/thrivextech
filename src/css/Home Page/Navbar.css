@@ -59,7 +59,7 @@
     color: #0eaae3;
     cursor: pointer;
     padding: 15px 20px;
-    background: -webkit-linear-gradient(0deg, transparent 50%, #0eaae3 50%);
+    background: -webkit-linear-gradient(0deg, white 50%, #0eaae3 50%);
     position: relative;
     background-size: 200% 100%;
     transition: .4s;
@@ -248,7 +248,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         top: 0;
         background-color: white;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         z-index: 4;
         
@@ -308,6 +308,7 @@
         border-bottom: 1px solid rgb(196, 196, 196);
     }
     .mobilenavbarcontentdiv2{
+        overflow-y: scroll;
         width: 90%;
     }
 
@@ -338,6 +339,7 @@
     }    
 
     .navbarcontactbtncontainer{
+        z-index: 5;
         margin-right: 0;
         width: 90%;
     }
@@ -345,5 +347,9 @@
     .navbarcontactbtncontainer a{
         text-align: center;
         width: 100%;
+    }
+
+    .privacypolicybodyinfo table,th,td{
+        width: 90px;
     }
 }

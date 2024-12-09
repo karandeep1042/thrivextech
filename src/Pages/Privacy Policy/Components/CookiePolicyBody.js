@@ -45,6 +45,7 @@ export default function CookiePolicyBody() {
                     Some of the cookies we commonly use are listed below. This list is not exhaustive, but it is intended to illustrate the main reasons we typically set cookies. If you visit one of our websites, the site may set some or all of the following cookies:  <br /><br />
                     A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your device in order to remember information about you, such as your language preference or login information. Those cookies are set by us and called first-party cookies. We also use third-party cookies – which are cookies from a domain different from the domain of the website you are visiting – for our advertising and marketing efforts. <br /><br />
                     <br /><br />
+                    
                     <table>
                         <tr>
                             <th>Third Party Companies</th>
@@ -110,7 +111,7 @@ export default function CookiePolicyBody() {
                 </div><br /><br />
                 <div className="privacypolicybodyinfo">
                     {/* <br /><br /><br /><span>Safari:</span> <br /><br /> */}
-                    <p style={{fontSize:'1rem',textAlign:'end',color:'#0eaae3'}}>This policy was last updated on 15th Aug, 2024</p>
+                    <p style={{ fontSize: '1rem', textAlign: 'end', color: '#0eaae3' }}>This policy was last updated on 15th Aug, 2024</p>
                     <br />
                 </div>
             </div>

@@ -11,7 +11,7 @@ export default function PrivacyPolicyBody() {
                     </p>
                 </div>
                 <div className="cookiepolicybodymainheader">
-                    <p style={{ margin: '5vh 0' }}>
+                    <p >
                         Privacy Policy
                     </p>
                 </div>

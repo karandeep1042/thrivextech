@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import '../../../css/Loader/Loader.css'
 import { hourglass } from 'ldrs'
+import emailjs from '@emailjs/browser';
 
 hourglass.register()
 
@@ -47,6 +48,28 @@ export default function ContactForm() {
     document.querySelector('.submitemailpopupfailed').style.display = "flex";
     let overlay = document.querySelector('.emailoverlay').style.display = "flex";
 
+    let service_key = 'service_ktc88y9';
+    let public_key = 'MBOoGx2dJN-fehq3E';
+    let template_key = 'template_3hexz7p'
+
+    let templateparams = {
+      from_name: firstName,
+      message: resumeText,
+    }
+
+    // emailjs
+    //   .send(service_key, template_key, templateparams, public_key )
+    //   .then(
+    //     () => {
+    //       setIsLoading(false);
+    //       document.querySelector('.submitemailpopup').style.transform = "scale(1)";
+    //     },
+    //     (error) => {
+    //       setIsLoading(false);
+    //       document.querySelector('.submitemailpopupfailed').style.transform = "scale(1)";
+    //       console.log('FAILED...', error);
+    //     },
+    //   );
     let dataSend = {
       fullname: `${firstName} ${lastName}`,
       phonenumber: phoneNumber,
@@ -114,12 +137,12 @@ export default function ContactForm() {
       errormsg[2].style.visibility = "visible"
       errormsg[2].innerHTML = "Please enter a valid email"
       emptyCounter++;
-    }else{
+    } else {
       elements[2].style.border = "1px solid red"
       errormsg[2].style.visibility = "visible"
     }
 
-    
+
     if (emptyCounter == 0) {
       sendMessage();
     }
@@ -127,17 +150,11 @@ export default function ContactForm() {
 
   return (
     <>
-      {isLoading && <l-hourglass className="loadingtimer"
+      {isLoading && <l-hourglass id="loadingtimer"
         size="100"
         bg-opacity="0.1"
         speed="1.8"
         color="#0eaae3"
-        style={{
-          position: 'fixed',
-          top: '45%',
-          left: '48%',
-          zIndex: '12'
-        }}
       ></l-hourglass>}
       <div className='dataenginfomaincontainer' >
         <div className="dataenginfochildcontainer">

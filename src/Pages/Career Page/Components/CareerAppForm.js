@@ -4,7 +4,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import { FadeUp } from '../../Animations/Animations';
 import { hourglass } from 'ldrs'
-
+import emailjs from '@emailjs/browser';
 
 hourglass.register()
 
@@ -87,7 +87,7 @@ export default function CareerAppForm() {
             }
         }
         if (elements[4].children[1].value.length < 14) {
-            
+
             elements[4].style.border = "1px solid red"
             errormsg[4].style.visibility = "visible"
             errormsg[4].innerHTML = "This field cannot be empty"
@@ -96,7 +96,7 @@ export default function CareerAppForm() {
             elements[4].style.border = "none"
             errormsg[4].style.visibility = "hidden"
         }
-        
+
         if (!elements[3].value.includes("@") || !elements[3].value.includes(".com")) {
             elements[3].style.border = "1px solid red"
             errormsg[3].style.visibility = "visible"
@@ -127,17 +127,11 @@ export default function CareerAppForm() {
 
     return (
         <>
-            {isLoading && <l-hourglass className="loadingtimer"
+            {isLoading && <l-hourglass id="loadingtimer"
                 size="100"
                 bg-opacity="0.1"
                 speed="1.8"
                 color="#0eaae3"
-                style={{
-                    position: 'fixed',
-                    top: '45%',
-                    left: '48%',
-                    zIndex: '12'
-                }}
             ></l-hourglass>}
             <div className="dataenginfomaincontainer" >
                 <div className="dataenginfochildcontainer" >

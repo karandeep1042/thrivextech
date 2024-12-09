@@ -10,7 +10,7 @@
 .cookiepolicybodymainheader {
     width: 100vw;
     color: #0eaae3;
-    margin: 0 auto;
+    margin: 5vh auto;
     font-size: 3rem;
     font-weight: 600;
     display: flex;
@@ -76,11 +76,30 @@ td {
 @media only screen and (max-width : 800px) {
 
     .privacypolicybodymainheader {
-        font-size: 2.5rem;
-        width: 90vw;
+        font-size: 2rem;
+        width: 100vw;
+    }
+    
+    .privacypolicybodymainheader p{
+        padding: 30vw 10vw;
+    }
+    
+    .cookiepolicybodymainheader{
+        font-size: 1.8rem;
+        margin-bottom: 3vh;
+    }
+    
+    .cookiepolicybodymainheader p{
+        padding: 0vw 5vw;
     }
 
+    .privacypolicybodyinfo span{
+        font-size: 1.6rem;
+    }
+    
     .privacypolicybodyinfo {
-        width: 90vw;
+        font-size: 1.3rem;
+        width: 100vw;
+        padding: 0 5vw;
     }
 }
